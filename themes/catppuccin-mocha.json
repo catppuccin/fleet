@@ -146,8 +146,8 @@
     "input.@error.@focused.border": "Red",
     "input.@error.@focused.focusRing": "Red",
 
-    "link.text": "Rosewater",
-    "link.focusRing": "Rosewater",
+    "link.text": "Blue",
+    "link.focusRing": "Blue",
 
     "list.cursor.border": "Mauve",
 
@@ -287,15 +287,15 @@
       }
     },
     "comment": {
-      "fgColor": "Overlay0",
-      "layer": 5
-    },
-    "comment.parameter": {
       "fgColor": "Surface2",
       "layer": 5
     },
+    "comment.parameter": {
+      "fgColor": "Overlay0",
+      "layer": 5
+    },
     "comment.parameter.value": {
-      "fgColor": "Surface1",
+      "fgColor": "Overlay0",
       "layer": 5
     },
     "link": {},
@@ -389,7 +389,7 @@
       }
     },
     "identifier.parameter": {
-      "fgColor": "Flamingo",
+      "fgColor": "Maroon",
       "layer": 20
     },
     "identifier.function.declaration": {
@@ -493,11 +493,11 @@
       "decoration": {}
     },
     "punctuation": {
-      "fgColor": "Overlay2",
+      "fgColor": "Teal",
       "layer": 20
     },
     "punctuation.operator": {
-      "fgColor": "Overlay2",
+      "fgColor": "Teal",
       "layer": 20
     },
     "snippet": {
@@ -628,10 +628,10 @@
       }
     },
     "problem.info": {
-      "stripeColor": "fab38740%",
+      "stripeColor": "94e2d540%",
       "layer": 50,
       "decoration": {
-        "color": "fab38740%",
+        "color": "94e2d540%",
         "style": "BORDER"
       }
     },
