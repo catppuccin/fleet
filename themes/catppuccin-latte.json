@@ -287,15 +287,15 @@
       }
     },
     "comment": {
-      "fgColor": "Overlay2",
+      "fgColor": "Overlay0",
       "layer": 5
     },
     "comment.parameter": {
-      "fgColor": "Overlay0",
+      "fgColor": "Overlay2",
       "layer": 5
     },
     "comment.parameter.value": {
-      "fgColor": "Overlay0",
+      "fgColor": "Overlay2",
       "layer": 5
     },
     "link": {},
