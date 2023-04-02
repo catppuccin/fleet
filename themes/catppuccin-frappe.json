@@ -287,7 +287,7 @@
       }
     },
     "comment": {
-      "fgColor": "Surface2",
+      "fgColor": "Overlay2",
       "layer": 5
     },
     "comment.parameter": {
@@ -314,7 +314,7 @@
       "layer": 20
     },
     "keyword.typeModifier": {
-      "fgColor": "Rosewater",
+      "fgColor": "Mauve",
       "layer": 20
     },
     "metadata": {
@@ -493,11 +493,11 @@
       "decoration": {}
     },
     "punctuation": {
-      "fgColor": "Teal",
+      "fgColor": "Sky",
       "layer": 20
     },
     "punctuation.operator": {
-      "fgColor": "Teal",
+      "fgColor": "Sky",
       "layer": 20
     },
     "snippet": {
