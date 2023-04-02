@@ -1,0 +1,25 @@
+# A catppuccin RC for JetBrains Fleet. In beta, specs may change. 
+app_name: "JetBrains Fleet"
+binary_name: fleet
+installation:
+  location:
+    macos: "~/.fleet"
+    linux: "~/.fleet"
+    windows: "~/.fleet"
+  flavours:
+    all:
+      default:
+        - themes/
+    latte:
+      default:
+        - themes/catppuccin-latte.json
+    frappe:
+      default:
+        - themes/catppuccin-frappe.json
+    macchiato:
+      default:
+        - themes/catppuccin-macchiato.json
+    mocha:
+      default:
+        - themes/catppuccin-mocha.json
+  to: themes/
