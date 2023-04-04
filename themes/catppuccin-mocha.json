@@ -76,10 +76,10 @@
     "dialog.tab.pane.fill": "Base",
     "diff.added.fill": "Green",
     "diff.deleted.fill": "Red",
-    "diff.modified.fill": "Peach",
+    "diff.modified.fill": "Blue",
     "diff.conflict.fill": "Red",
     "diff.added.file": "Green",
-    "diff.modified.file": "Peach",
+    "diff.modified.file": "Blue",
     "diff.conflict.file": "Red",
     "dnd.fill": "FFFFFF20%",
     "interline.block.fill": "Base",
@@ -611,21 +611,21 @@
       "showEmptyIntervals": true
     },
     "diff.modified": {
-      "bgColor": "fab38720%",
-      "stripeColor": "fab38720%",
+      "bgColor": "89b4fa20%",
+      "stripeColor": "89b4fa20%",
       "layer": -69,
       "fullLine": true
     },
     "diff.modified.word": {
-      "bgColor": "fab38720%",
+      "bgColor": "89b4fa20%",
       "layer": -60
     },
     "diff.modified.withBorder": {
-      "bgColor": "fab38720%",
+      "bgColor": "89b4fa20%",
       "layer": -69,
       "fullLine": true,
       "decoration": {
-        "color": "fab38720%",
+        "color": "89b4fa20%",
         "style": "BORDER"
       }
     },
