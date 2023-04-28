@@ -34,9 +34,9 @@
     "checkbox.@disabled.icon": "Subtext0",
     "checkbox.@disabled.text": "Subtext0",
     "checkbox.@focused.border": "Transparent",
-    "checkbox.border": "Mauve",
-    "checkbox.fill": "Mauve",
-    "checkbox.icon": "Crust",
+    "checkbox.border": "Surface1",
+    "checkbox.fill": "Base",
+    "checkbox.icon": "Mauve",
     "completion.match.fill": "Transparent",
     "completion.match.text": "Flamingo",
     "dangerous.button.@disabled.border": "Transparent",
@@ -125,7 +125,6 @@
     "primary.button.@focused.border": "Mauve",
     "primary.button.@hovered.fill": "Mauve",
     "primary.button.@hovered.text": "Crust",
-    "primary.button.@pressed.fill": "Mauve",
     "primary.button.border": "Transparent",
     "primary.button.fill": "Mauve",
     "primary.button.focusRing": "Mauve",
@@ -276,7 +275,7 @@
       "layer": -60
     },
     "diff.conflict.withBorder": {
-      "bgColor": "f38ba830%",
+      "bgColor": "e7828430%",
       "decoration": {
         "color": "Red",
         "style": "BORDER"
