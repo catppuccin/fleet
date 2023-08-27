@@ -109,6 +109,7 @@
     "input.@error.@focused.focusRing": "Red",
     "input.@error.border": "Red",
     "input.@focused.border": "Transparent",
+    "input.selection.fill": "Surface2",
     "interline.block.fill": "Base",
     "interline.editor.currentLine.@focused.fill": "Base",
     "interline.editor.currentLine.fill": "Base",
