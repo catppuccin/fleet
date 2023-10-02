@@ -67,7 +67,7 @@
     "diff.deleted.fill": "Red",
     "diff.modified.file": "Blue",
     "diff.modified.fill": "Blue",
-    "dnd.fill": "FFFFFF20%",
+    "dnd.fill": "ffffff20%",
     "editor.braceHighlight.fill": "Surface1",
     "editor.caret.fill": "Text",
     "editor.currentLine.@focused.fill": "7379941a",
@@ -133,9 +133,9 @@
     "progress.@indeterminate.@gradient.fill": "Mauve",
     "progress.container.fill": "Crust",
     "progress.fill": "Lavender",
-    "scrollbar.@dimmed.fill": "FFFFFF20%",
-    "scrollbar.@hovered.fill": "FFFFFF40%",
-    "scrollbar.fill": "FFFFFF30%",
+    "scrollbar.@dimmed.fill": "ffffff20%",
+    "scrollbar.@hovered.fill": "ffffff40%",
+    "scrollbar.fill": "ffffff30%",
     "selection.@dimmed.fill": "Surface0",
     "selection.@hovered.fill": "Surface1",
     "selection.fill": "Surface2",
@@ -385,10 +385,17 @@
     },
     "identifier.field": {
       "fgColor": "Text",
+      "fontModifier": {
+        "bold": false
+      },
       "layer": 20
     },
     "identifier.field.static": {
       "fgColor": "Teal",
+      "fontModifier": {
+        "bold": false,
+        "italic": false
+      },
       "layer": 20
     },
     "identifier.function.call": {
@@ -758,6 +765,7 @@
     "Base": "303446",
     "Blue": "8caaee",
     "Crust": "232634",
+    "DarkViolet": "660e7a",
     "Flamingo": "eebebe",
     "Green": "a6d189",
     "Lavender": "babbf1",

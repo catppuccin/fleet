@@ -1,7 +1,7 @@
 {
   "meta": {
-    "theme.kind": "Light",
-    "theme.name": "Catppuccin Latte",
+    "theme.kind": "{{KIND}}",
+    "theme.name": "{{NAME}}",
     "theme.version": 1
   },
   "colors": {
@@ -67,11 +67,11 @@
     "diff.deleted.fill": "Red",
     "diff.modified.file": "Blue",
     "diff.modified.fill": "Blue",
-    "dnd.fill": "00000020%",
+    "dnd.fill": "{{TRANSPARENT}}20%",
     "editor.braceHighlight.fill": "Surface1",
     "editor.caret.fill": "Text",
-    "editor.currentLine.@focused.fill": "9ca0b01a",
-    "editor.currentLine.fill": "9ca0b01a",
+    "editor.currentLine.@focused.fill": "{{OVERLAY0}}1a",
+    "editor.currentLine.fill": "{{OVERLAY0}}1a",
     "editor.fill": "Base",
     "editor.lineNumber.@selected.text": "Mauve",
     "editor.lineNumber.text": "Subtext0",
@@ -133,9 +133,9 @@
     "progress.@indeterminate.@gradient.fill": "Mauve",
     "progress.container.fill": "Crust",
     "progress.fill": "Lavender",
-    "scrollbar.@dimmed.fill": "00000020%",
-    "scrollbar.@hovered.fill": "00000040%",
-    "scrollbar.fill": "00000030%",
+    "scrollbar.@dimmed.fill": "{{TRANSPARENT}}20%",
+    "scrollbar.@hovered.fill": "{{TRANSPARENT}}40%",
+    "scrollbar.fill": "{{TRANSPARENT}}30%",
     "selection.@dimmed.fill": "Surface0",
     "selection.@hovered.fill": "Surface1",
     "selection.fill": "Surface2",
@@ -252,31 +252,31 @@
       "layer": -68
     },
     "diff.added": {
-      "bgColor": "40a02b20%",
+      "bgColor": "{{GREEN}}{{DIFF_ADDED_OPACITY}}",
       "fullLine": true,
       "layer": -69,
-      "stripeColor": "40a02b20%"
+      "stripeColor": "{{GREEN}}{{DIFF_ADDED_OPACITY}}"
     },
     "diff.added.empty": {
-      "bgColor": "40a02b20%",
+      "bgColor": "{{GREEN}}{{DIFF_ADDED_OPACITY}}",
       "layer": -60,
       "showEmptyIntervals": true
     },
     "diff.added.withBorder": {
-      "bgColor": "40a02b20%",
+      "bgColor": "{{GREEN}}{{DIFF_ADDED_OPACITY}}",
       "decoration": {
-        "color": "40a02b20%",
+        "color": "{{GREEN}}{{DIFF_ADDED_OPACITY}}",
         "style": "BORDER"
       },
       "fullLine": true,
       "layer": -69
     },
     "diff.added.word": {
-      "bgColor": "40a02b20%",
+      "bgColor": "{{GREEN}}{{DIFF_ADDED_OPACITY}}",
       "layer": -60
     },
     "diff.conflict.withBorder": {
-      "bgColor": "d20f3920%",
+      "bgColor": "{{RED}}{{DIFF_CONFLICT_OPACITY}}",
       "decoration": {
         "color": "Red",
         "style": "BORDER"
@@ -285,47 +285,47 @@
       "layer": -68
     },
     "diff.deleted": {
-      "bgColor": "d20f3910%",
+      "bgColor": "{{RED}}{{DIFF_DELETED_OPACITY}}",
       "fullLine": true,
       "layer": -69,
-      "stripeColor": "d20f3910%"
+      "stripeColor": "{{RED}}{{DIFF_DELETED_OPACITY}}"
     },
     "diff.deleted.empty": {
-      "bgColor": "d20f3910%",
+      "bgColor": "{{RED}}{{DIFF_DELETED_OPACITY}}",
       "layer": -60,
       "showEmptyIntervals": true
     },
     "diff.deleted.withBorder": {
-      "bgColor": "d20f3910%",
+      "bgColor": "{{RED}}{{DIFF_DELETED_OPACITY}}",
       "decoration": {
-        "color": "d20f3910%",
+        "color": "{{RED}}{{DIFF_DELETED_OPACITY}}",
         "style": "BORDER"
       },
       "fullLine": true,
       "layer": -69
     },
     "diff.deleted.word": {
-      "bgColor": "d20f3910%",
+      "bgColor": "{{RED}}{{DIFF_DELETED_OPACITY}}",
       "layer": -60,
       "showEmptyIntervals": true
     },
     "diff.modified": {
-      "bgColor": "1e66f510%",
+      "bgColor": "{{BLUE}}{{DIFF_DELETED_OPACITY}}",
       "fullLine": true,
       "layer": -69,
-      "stripeColor": "1e66f510%"
+      "stripeColor": "{{BLUE}}{{DIFF_DELETED_OPACITY}}"
     },
     "diff.modified.withBorder": {
-      "bgColor": "1e66f510%",
+      "bgColor": "{{BLUE}}{{DIFF_DELETED_OPACITY}}",
       "decoration": {
-        "color": "1e66f510%",
+        "color": "{{BLUE}}{{DIFF_DELETED_OPACITY}}",
         "style": "BORDER"
       },
       "fullLine": true,
       "layer": -69
     },
     "diff.modified.word": {
-      "bgColor": "1e66f510%",
+      "bgColor": "{{BLUE}}{{DIFF_DELETED_OPACITY}}",
       "layer": -60
     },
     "editor.rename.current": {
@@ -343,7 +343,7 @@
       "stripeColor": "Surface0"
     },
     "editor.search.results": {
-      "bgColor": "1e66f540%",
+      "bgColor": "{{BLUE}}40%",
       "layer": 100,
       "stripeColor": "Blue"
     },
@@ -384,17 +384,17 @@
       "layer": 20
     },
     "identifier.field": {
-      "fgColor": "DarkViolet",
+      "fgColor": "{{IDENTIFIER_FIELD}}",
       "fontModifier": {
-        "bold": true
+        "bold": {{IDENTIFIER_FIELD_BOOLEAN}}
       },
       "layer": 20
     },
     "identifier.field.static": {
-      "fgColor": "DarkViolet",
+      "fgColor": "{{IDENTIFIER_FIELD_STATIC}}",
       "fontModifier": {
-        "bold": true,
-        "italic": true
+        "bold": {{IDENTIFIER_FIELD_BOOLEAN}},
+        "italic": {{IDENTIFIER_FIELD_BOOLEAN}}
       },
       "layer": 20
     },
@@ -623,11 +623,11 @@
     },
     "problem.info": {
       "decoration": {
-        "color": "17929940%",
+        "color": "{{TEAL}}40%",
         "style": "BORDER"
       },
       "layer": 50,
-      "stripeColor": "17929940%"
+      "stripeColor": "{{TEAL}}40%"
     },
     "problem.unknown": {
       "fgColor": "Red",
@@ -762,33 +762,33 @@
     }
   },
   "palette": {
-    "Base": "eff1f5",
-    "Blue": "1e66f5",
-    "Crust": "dce0e8",
+    "Base": "{{BASE}}",
+    "Blue": "{{BLUE}}",
+    "Crust": "{{CRUST}}",
     "DarkViolet": "660e7a",
-    "Flamingo": "dd7878",
-    "Green": "40a02b",
-    "Lavender": "7287fd",
-    "Mantle": "e6e9ef",
-    "Maroon": "e64553",
-    "Mauve": "8839ef",
-    "Overlay0": "9ca0b0",
-    "Overlay1": "8c8fa1",
-    "Overlay2": "7c7f93",
-    "Peach": "fe640b",
-    "Pink": "ea76cb",
-    "Red": "d20f39",
-    "Rosewater": "dc8a78",
-    "Sapphire": "209fb5",
-    "Sky": "04a5e5",
-    "Subtext0": "6c6f85",
-    "Subtext1": "5c5f77",
-    "Surface0": "ccd0da",
-    "Surface1": "bcc0cc",
-    "Surface2": "acb0be",
-    "Teal": "179299",
-    "Text": "4c4f69",
-    "Transparent": "0000000%",
-    "Yellow": "df8e1d"
+    "Flamingo": "{{FLAMINGO}}",
+    "Green": "{{GREEN}}",
+    "Lavender": "{{LAVENDER}}",
+    "Mantle": "{{MANTLE}}",
+    "Maroon": "{{MAROON}}",
+    "Mauve": "{{MAUVE}}",
+    "Overlay0": "{{OVERLAY0}}",
+    "Overlay1": "{{OVERLAY1}}",
+    "Overlay2": "{{OVERLAY2}}",
+    "Peach": "{{PEACH}}",
+    "Pink": "{{PINK}}",
+    "Red": "{{RED}}",
+    "Rosewater": "{{ROSEWATER}}",
+    "Sapphire": "{{SAPPHIRE}}",
+    "Sky": "{{SKY}}",
+    "Subtext0": "{{SUBTEXT0}}",
+    "Subtext1": "{{SUBTEXT1}}",
+    "Surface0": "{{SURFACE0}}",
+    "Surface1": "{{SURFACE1}}",
+    "Surface2": "{{SURFACE2}}",
+    "Teal": "{{TEAL}}",
+    "Text": "{{TEXT}}",
+    "Transparent": "{{TRANSPARENT}}0%",
+    "Yellow": "{{YELLOW}}"
   }
 }
