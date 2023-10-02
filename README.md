@@ -41,6 +41,10 @@
 3. Create a `themes` folder if not already present
 4. Copy the content of the [themes](themes/) folder in the `themes` folder created before
 
+## Contributing
+
+To contribute to this repository, make sure you edit only the [`theme.template`](/generator/theme.template) file and then run the generator script via `python generator/generate.py`.
+
 ## 💝 Thanks to
 
 - [Krypton](https://github.com/kkrypt0nn)
