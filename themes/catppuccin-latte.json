@@ -384,18 +384,11 @@
       "layer": 20
     },
     "identifier.field": {
-      "fgColor": "DarkViolet",
-      "fontModifier": {
-        "bold": true
-      },
+      "fgColor": "Text",
       "layer": 20
     },
     "identifier.field.static": {
-      "fgColor": "DarkViolet",
-      "fontModifier": {
-        "bold": true,
-        "italic": true
-      },
+      "fgColor": "Teal",
       "layer": 20
     },
     "identifier.function.call": {
@@ -765,7 +758,6 @@
     "Base": "eff1f5",
     "Blue": "1e66f5",
     "Crust": "dce0e8",
-    "DarkViolet": "660e7a",
     "Flamingo": "dd7878",
     "Green": "40a02b",
     "Lavender": "7287fd",

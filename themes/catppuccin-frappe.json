@@ -385,17 +385,10 @@
     },
     "identifier.field": {
       "fgColor": "Text",
-      "fontModifier": {
-        "bold": false
-      },
       "layer": 20
     },
     "identifier.field.static": {
       "fgColor": "Teal",
-      "fontModifier": {
-        "bold": false,
-        "italic": false
-      },
       "layer": 20
     },
     "identifier.function.call": {
@@ -765,7 +758,6 @@
     "Base": "303446",
     "Blue": "8caaee",
     "Crust": "232634",
-    "DarkViolet": "660e7a",
     "Flamingo": "eebebe",
     "Green": "a6d189",
     "Lavender": "babbf1",

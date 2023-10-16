@@ -30,9 +30,6 @@ def main() -> None:
             "DIFF_ADDED_OPACITY": "40%" if kind == "Dark" else "20%",
             "DIFF_CONFLICT_OPACITY": "30%" if kind == "Dark" else "20%",
             "DIFF_DELETED_OPACITY": "20%" if kind == "Dark" else "10%",
-            "IDENTIFIER_FIELD": "Text" if kind == "Dark" else "DarkViolet",
-            "IDENTIFIER_FIELD_STATIC": "Teal" if kind == "Dark" else "DarkViolet",
-            "IDENTIFIER_FIELD_BOOLEAN": "false" if kind == "Dark" else "true",
             "TRANSPARENT": "ffffff" if kind == "Dark" else "000000",
         }
         with open(
