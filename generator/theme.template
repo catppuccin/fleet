@@ -384,18 +384,11 @@
       "layer": 20
     },
     "identifier.field": {
-      "fgColor": "{{IDENTIFIER_FIELD}}",
-      "fontModifier": {
-        "bold": {{IDENTIFIER_FIELD_BOOLEAN}}
-      },
+      "fgColor": "Text",
       "layer": 20
     },
     "identifier.field.static": {
-      "fgColor": "{{IDENTIFIER_FIELD_STATIC}}",
-      "fontModifier": {
-        "bold": {{IDENTIFIER_FIELD_BOOLEAN}},
-        "italic": {{IDENTIFIER_FIELD_BOOLEAN}}
-      },
+      "fgColor": "Teal",
       "layer": 20
     },
     "identifier.function.call": {
@@ -765,7 +758,6 @@
     "Base": "{{BASE}}",
     "Blue": "{{BLUE}}",
     "Crust": "{{CRUST}}",
-    "DarkViolet": "660e7a",
     "Flamingo": "{{FLAMINGO}}",
     "Green": "{{GREEN}}",
     "Lavender": "{{LAVENDER}}",
