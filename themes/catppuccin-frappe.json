@@ -359,6 +359,24 @@
     "editor.text.scheme": {
       "fgColor": "Overlay2"
     },
+    "editor.indent.guide": {
+        "fgColor": "Overlay0",
+        "decoration": {
+            "style": "DASHED"
+        }
+    },
+    "editor.indent.guide.current": {
+        "fgColor": "Overlay2",
+        "decoration": {
+            "style": "DASHED"
+        }
+    },
+    "editor.indent.guide.declaration": {
+        "fgColor": "Surface0"
+    },
+    "editor.indent.guide.declaration.current": {
+        "fgColor": "Overlay0"
+    },
     "entityReference.html": {
       "fgColor": "Red",
       "layer": 20
