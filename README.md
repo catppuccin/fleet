@@ -43,7 +43,7 @@
 
 ## Contributing
 
-To contribute to this repository, make sure you edit only the [`theme.template`](/generator/theme.template) file and then run the generator script via `python generator/generate.py`.
+See https://github.com/catppuccin/toolbox/tree/main/whiskers.
 
 ## 💝 Thanks to
 

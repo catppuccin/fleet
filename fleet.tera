@@ -1,7 +1,28 @@
+---
+accent: mauve
+whiskers:
+  version: "2.3.0"
+  matrix:
+    - flavor
+  filename: "themes/catppuccin-{{ flavor.identifier }}.json"
+---
+
+{%- if flavor.dark -%}
+{%- set transparent = "ffffff" -%}
+{%- set diff_added_opacity = "40%" -%}
+{%- set diff_conflict_opacity = "30%" -%}
+{%- set diff_deleted_opacity = "20%" -%}
+{%- else -%}
+{%- set transparent = "000000" -%}
+{%- set diff_added_opacity = "20%" -%}
+{%- set diff_conflict_opacity = "20%" -%}
+{%- set diff_deleted_opacity = "10%" -%}
+{%- endif -%}
+
 {
   "meta": {
-    "theme.kind": "{{KIND}}",
-    "theme.name": "{{NAME}}",
+    "theme.kind": "{% if flavor.dark %}Dark{% else %}Light{% endif %}",
+    "theme.name": "Catppuccin {{ flavor.name }}",
     "theme.version": 1
   },
   "colors": {
@@ -67,11 +88,11 @@
     "diff.deleted.fill": "Red",
     "diff.modified.file": "Blue",
     "diff.modified.fill": "Blue",
-    "dnd.fill": "{{TRANSPARENT}}20%",
+    "dnd.fill": "{{ transparent }}20%",
     "editor.braceHighlight.fill": "Surface1",
     "editor.caret.fill": "Text",
-    "editor.currentLine.@focused.fill": "{{OVERLAY0}}1a",
-    "editor.currentLine.fill": "{{OVERLAY0}}1a",
+    "editor.currentLine.@focused.fill": "{{ overlay0 | mod(opacity=0.1) | get(key="hex") }}",
+    "editor.currentLine.fill": "{{ overlay0 | mod(opacity=0.1) | get(key="hex") }}",
     "editor.fill": "Base",
     "editor.lineNumber.@selected.text": "Mauve",
     "editor.lineNumber.text": "Subtext0",
@@ -133,9 +154,9 @@
     "progress.@indeterminate.@gradient.fill": "Mauve",
     "progress.container.fill": "Crust",
     "progress.fill": "Lavender",
-    "scrollbar.@dimmed.fill": "{{TRANSPARENT}}20%",
-    "scrollbar.@hovered.fill": "{{TRANSPARENT}}40%",
-    "scrollbar.fill": "{{TRANSPARENT}}30%",
+    "scrollbar.@dimmed.fill": "{{ transparent }}20%",
+    "scrollbar.@hovered.fill": "{{ transparent }}40%",
+    "scrollbar.fill": "{{ transparent }}30%",
     "selection.@dimmed.fill": "Surface0",
     "selection.@hovered.fill": "Surface1",
     "selection.fill": "Surface2",
@@ -252,31 +273,31 @@
       "layer": -68
     },
     "diff.added": {
-      "bgColor": "{{GREEN}}{{DIFF_ADDED_OPACITY}}",
+      "bgColor": "{{ green.hex }}{{ diff_added_opacity }}",
       "fullLine": true,
       "layer": -69,
-      "stripeColor": "{{GREEN}}{{DIFF_ADDED_OPACITY}}"
+      "stripeColor": "{{ green.hex }}{{ diff_added_opacity }}"
     },
     "diff.added.empty": {
-      "bgColor": "{{GREEN}}{{DIFF_ADDED_OPACITY}}",
+      "bgColor": "{{ green.hex }}{{ diff_added_opacity }}",
       "layer": -60,
       "showEmptyIntervals": true
     },
     "diff.added.withBorder": {
-      "bgColor": "{{GREEN}}{{DIFF_ADDED_OPACITY}}",
+      "bgColor": "{{ green.hex }}{{ diff_added_opacity }}",
       "decoration": {
-        "color": "{{GREEN}}{{DIFF_ADDED_OPACITY}}",
+        "color": "{{ green.hex }}{{ diff_added_opacity }}",
         "style": "BORDER"
       },
       "fullLine": true,
       "layer": -69
     },
     "diff.added.word": {
-      "bgColor": "{{GREEN}}{{DIFF_ADDED_OPACITY}}",
+      "bgColor": "{{ green.hex }}{{ diff_added_opacity }}",
       "layer": -60
     },
     "diff.conflict.withBorder": {
-      "bgColor": "{{RED}}{{DIFF_CONFLICT_OPACITY}}",
+      "bgColor": "{{ red.hex }}{{ diff_conflict_opacity }}",
       "decoration": {
         "color": "Red",
         "style": "BORDER"
@@ -285,47 +306,47 @@
       "layer": -68
     },
     "diff.deleted": {
-      "bgColor": "{{RED}}{{DIFF_DELETED_OPACITY}}",
+      "bgColor": "{{ red.hex }}{{ diff_deleted_opacity }}",
       "fullLine": true,
       "layer": -69,
-      "stripeColor": "{{RED}}{{DIFF_DELETED_OPACITY}}"
+      "stripeColor": "{{ red.hex }}{{ diff_deleted_opacity }}"
     },
     "diff.deleted.empty": {
-      "bgColor": "{{RED}}{{DIFF_DELETED_OPACITY}}",
+      "bgColor": "{{ red.hex }}{{ diff_deleted_opacity }}",
       "layer": -60,
       "showEmptyIntervals": true
     },
     "diff.deleted.withBorder": {
-      "bgColor": "{{RED}}{{DIFF_DELETED_OPACITY}}",
+      "bgColor": "{{ red.hex }}{{ diff_deleted_opacity }}",
       "decoration": {
-        "color": "{{RED}}{{DIFF_DELETED_OPACITY}}",
+        "color": "{{ red.hex }}{{ diff_deleted_opacity }}",
         "style": "BORDER"
       },
       "fullLine": true,
       "layer": -69
     },
     "diff.deleted.word": {
-      "bgColor": "{{RED}}{{DIFF_DELETED_OPACITY}}",
+      "bgColor": "{{ red.hex }}{{ diff_deleted_opacity }}",
       "layer": -60,
       "showEmptyIntervals": true
     },
     "diff.modified": {
-      "bgColor": "{{BLUE}}{{DIFF_DELETED_OPACITY}}",
+      "bgColor": "{{ blue.hex }}{{ diff_deleted_opacity }}",
       "fullLine": true,
       "layer": -69,
-      "stripeColor": "{{BLUE}}{{DIFF_DELETED_OPACITY}}"
+      "stripeColor": "{{ blue.hex }}{{ diff_deleted_opacity }}"
     },
     "diff.modified.withBorder": {
-      "bgColor": "{{BLUE}}{{DIFF_DELETED_OPACITY}}",
+      "bgColor": "{{ blue.hex }}{{ diff_deleted_opacity }}",
       "decoration": {
-        "color": "{{BLUE}}{{DIFF_DELETED_OPACITY}}",
+        "color": "{{ blue.hex }}{{ diff_deleted_opacity }}",
         "style": "BORDER"
       },
       "fullLine": true,
       "layer": -69
     },
     "diff.modified.word": {
-      "bgColor": "{{BLUE}}{{DIFF_DELETED_OPACITY}}",
+      "bgColor": "{{ blue.hex }}{{ diff_deleted_opacity }}",
       "layer": -60
     },
     "editor.rename.current": {
@@ -343,7 +364,7 @@
       "stripeColor": "Surface0"
     },
     "editor.search.results": {
-      "bgColor": "{{BLUE}}40%",
+      "bgColor": "{{ blue.hex }}40%",
       "layer": 100,
       "stripeColor": "Blue"
     },
@@ -634,11 +655,11 @@
     },
     "problem.info": {
       "decoration": {
-        "color": "{{TEAL}}40%",
+        "color": "{{ teal.hex }}40%",
         "style": "BORDER"
       },
       "layer": 50,
-      "stripeColor": "{{TEAL}}40%"
+      "stripeColor": "{{ teal.hex }}40%"
     },
     "problem.unknown": {
       "fgColor": "Red",
@@ -773,32 +794,9 @@
     }
   },
   "palette": {
-    "Base": "{{BASE}}",
-    "Blue": "{{BLUE}}",
-    "Crust": "{{CRUST}}",
-    "Flamingo": "{{FLAMINGO}}",
-    "Green": "{{GREEN}}",
-    "Lavender": "{{LAVENDER}}",
-    "Mantle": "{{MANTLE}}",
-    "Maroon": "{{MAROON}}",
-    "Mauve": "{{MAUVE}}",
-    "Overlay0": "{{OVERLAY0}}",
-    "Overlay1": "{{OVERLAY1}}",
-    "Overlay2": "{{OVERLAY2}}",
-    "Peach": "{{PEACH}}",
-    "Pink": "{{PINK}}",
-    "Red": "{{RED}}",
-    "Rosewater": "{{ROSEWATER}}",
-    "Sapphire": "{{SAPPHIRE}}",
-    "Sky": "{{SKY}}",
-    "Subtext0": "{{SUBTEXT0}}",
-    "Subtext1": "{{SUBTEXT1}}",
-    "Surface0": "{{SURFACE0}}",
-    "Surface1": "{{SURFACE1}}",
-    "Surface2": "{{SURFACE2}}",
-    "Teal": "{{TEAL}}",
-    "Text": "{{TEXT}}",
-    "Transparent": "{{TRANSPARENT}}0%",
-    "Yellow": "{{YELLOW}}"
+{%- for _, color in flavor.colors %}
+    "{{ color.identifier | capitalize }}": "{{ color.hex }}",
+{%- endfor %}
+    "Transparent": "ffffff0%"
   }
 }
