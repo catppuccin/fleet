@@ -246,7 +246,7 @@ whiskers:
     "smartMode.loader.border": "Sky",
     "smartMode.error.fill": "Red",
     "settings.modified.indicator": "Yellow",
-    "dragAndDrop.background": "{{ transparent }}30%",
+    "dragAndDrop.background": "{{ transparent }}10%",
     "problemsWidget.checkmark.foreground": "Green",
     "problemsWidget.checkmark.background": "{{ green.hex }}30%",
     "problemsWidget.status.expanded.background.error": "{{ red.hex }}30%",

@@ -220,7 +220,7 @@
     "smartMode.loader.border": "Sky",
     "smartMode.error.fill": "Red",
     "settings.modified.indicator": "Yellow",
-    "dragAndDrop.background": "ffffff30%",
+    "dragAndDrop.background": "ffffff10%",
     "problemsWidget.checkmark.foreground": "Green",
     "problemsWidget.checkmark.background": "a6da9530%",
     "problemsWidget.status.expanded.background.error": "ed879630%",
