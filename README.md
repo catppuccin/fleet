@@ -43,7 +43,7 @@
 
 ## Contributing
 
-See https://github.com/catppuccin/toolbox/tree/main/whiskers.
+See https://github.com/catppuccin/whiskers.
 
 ## 💝 Thanks to
 
