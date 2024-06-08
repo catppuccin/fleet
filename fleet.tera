@@ -396,7 +396,7 @@ whiskers:
     },
     {#- No qualifier refers to unfocused #}
     "editor.selection": {
-      "bgColor": "Surface0",
+      "bgColor": "Surface2",
       "layer": 2000
     },
     "editor.selection.focused": {
