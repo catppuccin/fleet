@@ -48,7 +48,8 @@ whiskers:
     "text.dimmed": "Surface2",
     "text.disabled": "Surface1",
     "text.success": "Green",
-    "text.error": "Text",
+    "text.error": "Red",
+    "text.dangerous": "Red",
 
     "button.background.default": "Surface0",
     "button.background.hovered": "Surface1",
@@ -219,6 +220,10 @@ whiskers:
     "editor.gitDiff.background.modified": "Blue",
     "editor.gitDiff.text.modified": "Blue",
     "editor.interline.block.background": "Mantle",
+    "editor.interline.listItem.text.default": "Text",
+    "editor.interline.listItem.text.hovered": "Text",
+    "editor.interline.listItem.text.focused": "Text",
+    "editor.interline.listItem.text.selected": "Text",
     "editor.interline.listItem.border.default": "Transparent",
     "editor.interline.listItem.border.hovered": "Transparent",
     "editor.interline.listItem.border.focused": "Transparent",
@@ -269,6 +274,11 @@ whiskers:
     "popup.editor.background": "Base",
     "popup.tab.background.default": "Transparent",
     "popup.tab.indicator": "Mauve",
+    "popup.tab.text": "Text",
+    "popup.listItem.text.default": "Text",
+    "popup.listItem.text.hovered": "Text",
+    "popup.listItem.text.focused": "Text",
+    "popup.listItem.text.selected": "Text",
     "popup.listItem.border.default": "Transparent",
     "popup.listItem.border.hovered": "Transparent",
     "popup.listItem.border.focused": "Transparent",
@@ -297,6 +307,7 @@ whiskers:
     "tab.background.default": "Mantle",
     "tab.background.selected": "Base",
     "tab.background.hovered": "Crust",
+    "tab.text": "Text",
     "tab.indicator": "Mauve",
     "tabPanel.background": "Mantle",
 
@@ -347,6 +358,10 @@ whiskers:
 
     "tree.focusBorder": "Mauve",
 
+    "listItem.text.default": "Text",
+    "listItem.text.hovered": "Text",
+    "listItem.text.focused": "Text",
+    "listItem.text.selected": "Text",
     "listItem.border.default": "Transparent",
     "listItem.border.hovered": "Transparent",
     "listItem.border.focused": "Transparent",
@@ -390,17 +405,13 @@ whiskers:
       "fgColor": "Overlay0",
       "layer": 5
     },
-    "comment.buildConstraint.go": {
-      "fgColor": "Red",
-      "layer": 5
+    "comment.doc": {
+      "fgColor": "Overlay0",
+      "layer": 6
     },
-    "comment.parameter": {
-      "fgColor": "Overlay2",
-      "layer": 5
-    },
-    "comment.parameter.value": {
-      "fgColor": "Overlay2",
-      "layer": 5
+    "comment.doc.value": {
+      "fgColor": "Overlay1",
+      "layer": 10
     },
     "comment.todo": {
       "fgColor": "Yellow",
