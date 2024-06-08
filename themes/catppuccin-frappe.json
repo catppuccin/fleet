@@ -23,6 +23,7 @@
     "border.focused": "Mauve",
 
     "text.default": "Text",
+    "text.primary": "Text",
     "text.secondary": "Surface2",
     "text.dimmed": "Surface2",
     "text.disabled": "Surface1",
@@ -254,6 +255,7 @@
     "popup.tab.background.default": "Transparent",
     "popup.tab.indicator": "Mauve",
     "popup.tab.text": "Text",
+    "popup.tabPanel.background": "Mantle",
     "popup.listItem.text.default": "Text",
     "popup.listItem.text.hovered": "Text",
     "popup.listItem.text.focused": "Text",
