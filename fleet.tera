@@ -399,12 +399,12 @@ whiskers:
     "problemsWidget.status.expanded.border.warning": "Yellow",
     "problemsWidget.status.expanded.border.weakWarning": "{{ yellow.hex }}40%",
 
-	  "gitBranchTag.local.text": "Text",
-		"gitBranchTag.local.background": "{{ blue.hex }}10%",
-		"gitBranchTag.local.border": "Blue",
-		"gitBranchTag.remote.text": "Text",
-		"gitBranchTag.remote.background": "{{ mauve.hex }}10%",
-		"gitBranchTag.remote.border": "Mauve"
+    "gitBranchTag.local.text": "Text",
+    "gitBranchTag.local.background": "{{ blue.hex }}10%",
+    "gitBranchTag.local.border": "Blue",
+    "gitBranchTag.remote.text": "Text",
+    "gitBranchTag.remote.background": "{{ mauve.hex }}10%",
+    "gitBranchTag.remote.border": "Mauve"
   },
   "text-attributes": {
     "attributeName.html": {
