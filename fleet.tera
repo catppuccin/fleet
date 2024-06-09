@@ -404,7 +404,7 @@ whiskers:
 		"gitBranchTag.local.border": "Blue",
 		"gitBranchTag.remote.text": "Text",
 		"gitBranchTag.remote.background": "{{ mauve.hex }}10%",
-		"gitBranchTag.remote.border": "Mauve",
+		"gitBranchTag.remote.border": "Mauve"
   },
   "text-attributes": {
     "attributeName.html": {
