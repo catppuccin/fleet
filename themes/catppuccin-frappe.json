@@ -370,7 +370,14 @@
     "problemsWidget.status.expanded.background.weakWarning": "e5c89040%",
     "problemsWidget.status.expanded.border.error": "Red",
     "problemsWidget.status.expanded.border.warning": "Yellow",
-    "problemsWidget.status.expanded.border.weakWarning": "e5c89040%"
+    "problemsWidget.status.expanded.border.weakWarning": "e5c89040%",
+
+	  "gitBranchTag.local.text": "Text",
+		"gitBranchTag.local.background": "8caaee10%",
+		"gitBranchTag.local.border": "Blue",
+		"gitBranchTag.remote.text": "Text",
+		"gitBranchTag.remote.background": "ca9ee610%",
+		"gitBranchTag.remote.border": "Mauve",
   },
   "text-attributes": {
     "attributeName.html": {
