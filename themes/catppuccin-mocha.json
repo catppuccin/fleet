@@ -117,6 +117,7 @@
     "checkbox.off.border.hovered": "Mauve",
     "checkbox.off.border.pressed": "Surface2",
 
+    // FIXME:
     "toggleButton.on.focusBorder": "Transparent",
     "toggleButton.on.background.default": "Mauve",
     "toggleButton.on.background.disabled": "Overlay0",
@@ -389,6 +390,17 @@
     "remoteWorkspaceStatusLabel.text.wsl": "Crust",
     "remoteWorkspaceStatusLabel.text.docker": "Crust",
     "remoteWorkspaceStatusLabel.text.space": "Crust",
+
+    "remote.userColor.background.one": "f5e0dc70%",
+    "remote.userColor.background.two": "f5c2e770%",
+    "remote.userColor.background.three": "b4befe70%",
+    "remote.userColor.background.four": "cba6f770%",
+    "remote.userColor.background.five": "eba0ac70%",
+    "remote.userColor.background.six": "fab38770%",
+    "remote.userColor.background.seven": "f9e2af70%",
+    "remote.userColor.background.eight": "a6e3a170%",
+    "remote.userColor.background.nine": "94e2d570%",
+    "remote.userColor.background.ten": "89b4fa70%",
 
     "ai.inputField.background.default": "Mantle",
     "ai.inputField.border.default": "Transparent",

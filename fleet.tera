@@ -138,6 +138,7 @@ whiskers:
     "checkbox.off.border.hovered": "Mauve",
     "checkbox.off.border.pressed": "Surface2",
 
+    // FIXME:
     "toggleButton.on.focusBorder": "Transparent",
     "toggleButton.on.background.default": "Mauve",
     "toggleButton.on.background.disabled": "Overlay0",
@@ -416,6 +417,17 @@ whiskers:
     "remoteWorkspaceStatusLabel.text.wsl": "Crust",
     "remoteWorkspaceStatusLabel.text.docker": "Crust",
     "remoteWorkspaceStatusLabel.text.space": "Crust",
+
+    "remote.userColor.background.one": "{{ rosewater.hex }}70%",
+    "remote.userColor.background.two": "{{ pink.hex }}70%",
+    "remote.userColor.background.three": "{{ lavender.hex }}70%",
+    "remote.userColor.background.four": "{{ mauve.hex }}70%",
+    "remote.userColor.background.five": "{{ maroon.hex }}70%",
+    "remote.userColor.background.six": "{{ peach.hex }}70%",
+    "remote.userColor.background.seven": "{{ yellow.hex }}70%",
+    "remote.userColor.background.eight": "{{ green.hex }}70%",
+    "remote.userColor.background.nine": "{{ teal.hex }}70%",
+    "remote.userColor.background.ten": "{{ blue.hex }}70%",
 
     "ai.inputField.background.default": "Mantle",
     "ai.inputField.border.default": "Transparent",
