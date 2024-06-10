@@ -381,6 +381,15 @@
     "gitBranchTag.remote.background": "cba6f710%",
     "gitBranchTag.remote.border": "Mauve",
 
+    "remoteWorkspaceStatusLabel.background.ssh": "Green",
+    "remoteWorkspaceStatusLabel.background.wsl": "Yellow",
+    "remoteWorkspaceStatusLabel.background.docker": "Sky",
+    "remoteWorkspaceStatusLabel.background.space": "Mauve",
+    "remoteWorkspaceStatusLabel.text.ssh": "Crust",
+    "remoteWorkspaceStatusLabel.text.wsl": "Crust",
+    "remoteWorkspaceStatusLabel.text.docker": "Crust",
+    "remoteWorkspaceStatusLabel.text.space": "Crust",
+
     "ai.inputField.background.default": "Mantle",
     "ai.inputField.border.default": "Transparent",
     "ai.inputField.focusOutline.default": "Transparent",
