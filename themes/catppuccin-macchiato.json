@@ -887,9 +887,7 @@
       "stripeColor": "8bd5ca40%"
     },
     "problem.unknown": {
-      "fgColor": "Red",
-      "layer": 50,
-      "stripeColor": "Red"
+      "layer": 50
     },
     "problem.unused": {
       "decoration": {
