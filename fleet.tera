@@ -49,8 +49,6 @@ whiskers:
     "text.dimmed": "Surface2",
     "text.disabled": "Surface1",
     "text.success": "Green",
-    "text.error": "Red",
-    "text.dangerous": "Red",
 
     "button.background.default": "Surface0",
     "button.background.hovered": "Surface1",
@@ -398,12 +396,16 @@ whiskers:
 
     "problemsWidget.checkmark.foreground": "Green",
     "problemsWidget.checkmark.background": "{{ green.hex }}30%",
-    "problemsWidget.status.expanded.background.error": "{{ red.hex }}30%",
-    "problemsWidget.status.expanded.background.warning": "{{ yellow.hex }}30%",
-    "problemsWidget.status.expanded.background.weakWarning": "{{ yellow.hex }}40%",
-    "problemsWidget.status.expanded.border.error": "Red",
-    "problemsWidget.status.expanded.border.warning": "Yellow",
-    "problemsWidget.status.expanded.border.weakWarning": "{{ yellow.hex }}40%",
+    "problemsWidget.status.expanded.background.error": "{{ red | mod(lightness=50) | get(key="hex") }}",
+    "problemsWidget.status.expanded.background.warning": "{{ yellow | mod(lightness=45) | get(key="hex") }}",
+    {% if flavor.dark -%}
+    "problemsWidget.status.expanded.background.weakWarning": "{{ yellow | mod(lightness=20) | get(key="hex") }}",
+    {% else %}
+    "problemsWidget.status.expanded.background.weakWarning": "{{ yellow | mod(lightness=90) | get(key="hex") }}",
+    {% endif %}
+    "problemsWidget.status.expanded.border.error": "{{ red | mod(lightness=50) | get(key="hex") }}",
+    "problemsWidget.status.expanded.border.warning": "{{ yellow | mod(lightness=45) | get(key="hex") }}",
+    "problemsWidget.status.expanded.border.weakWarning": "{{ yellow | mod(lightness=50) | get(key="hex") }}",
 
     "gitBranchTag.local.text": "Text",
     "gitBranchTag.local.background": "{{ blue.hex }}10%",
@@ -505,6 +507,10 @@ whiskers:
     },
     "comment.doc.value": {
       "fgColor": "Overlay1",
+      "layer": 10
+    },
+    "comment.doc.tag": {
+      "fgColor": "Maroon",
       "layer": 10
     },
     "comment.todo": {
@@ -631,7 +637,7 @@ whiskers:
       }
     },
     "editor.text.scheme": {
-      "fgColor": "Overlay2"
+      "fgColor": "Text"
     },
     "editor.indent.guide": {
       "fgColor": "Overlay0",
@@ -656,7 +662,7 @@ whiskers:
       "layer": 20
     },
     "identifier": {
-      "fgColor": "Maroon",
+      "fgColor": "Text",
       "layer": 10
     },
     "identifier.alias.yaml": {
@@ -672,7 +678,7 @@ whiskers:
       "layer": 20
     },
     "identifier.constant.predefined": {
-      "fgColor": "Peach",
+      "fgColor": "Red",
       "layer": 20
     },
     "identifier.field": {
@@ -712,11 +718,11 @@ whiskers:
       "layer": 20
     },
     "identifier.namedArgument": {
-      "fgColor": "Blue",
+      "fgColor": "Maroon",
       "layer": 20
     },
     "identifier.other": {
-      "fgColor": "Overlay2",
+      "fgColor": "Text",
       "layer": 20
     },
     "identifier.package.go": {
@@ -730,6 +736,12 @@ whiskers:
     "identifier.this": {
       "fgColor": "Mauve",
       "layer": 20
+    },
+    "identifier.this.mutable": {
+      "layer": 20,
+      "decoration": {
+        "color": "Overlay2"
+      }
     },
     "identifier.type": {
       "fgColor": "Yellow",
@@ -771,16 +783,15 @@ whiskers:
       },
       "layer": 1000
     },
-    "identifier.variable.local": {
+    "identifier.variable": {
       "fgColor": "Text",
       "layer": 20
     },
-    "identifier.variable.local.reassigned": {
+    "identifier.variable.mutable": {
+      "layer": 20,
       "decoration": {
         "color": "Overlay2"
-      },
-      "fgColor": "Text",
-      "layer": 20
+      }
     },
     "key.yaml": {
       "fgColor": "Blue",
@@ -935,11 +946,11 @@ whiskers:
     },
     "problem.warning.weak": {
       "decoration": {
-        "color": "Yellow",
+        "color": "{{ yellow.hex }}40%",
         "thickness": 2.0
       },
       "layer": 40,
-      "stripeColor": "Yellow"
+      "stripeColor": "{{ yellow.hex }}40%"
     },
     "propertyName.css": {
       "fgColor": "Blue",
