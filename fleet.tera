@@ -929,10 +929,6 @@ whiskers:
       "layer": 50
     },
     "problem.unused": {
-      "decoration": {
-        "color": "Overlay1",
-        "thickness": 2.0
-      },
       "fgColor": "Overlay0",
       "layer": 60
     },
