@@ -28,8 +28,6 @@
     "text.dimmed": "Surface2",
     "text.disabled": "Surface1",
     "text.success": "Green",
-    "text.error": "Red",
-    "text.dangerous": "Red",
 
     "button.background.default": "Surface0",
     "button.background.hovered": "Surface1",
@@ -371,12 +369,13 @@
 
     "problemsWidget.checkmark.foreground": "Green",
     "problemsWidget.checkmark.background": "a6da9530%",
-    "problemsWidget.status.expanded.background.error": "ed879630%",
-    "problemsWidget.status.expanded.background.warning": "eed49f30%",
-    "problemsWidget.status.expanded.background.weakWarning": "eed49f40%",
-    "problemsWidget.status.expanded.border.error": "Red",
-    "problemsWidget.status.expanded.border.warning": "Yellow",
-    "problemsWidget.status.expanded.border.weakWarning": "eed49f40%",
+    "problemsWidget.status.expanded.background.error": "de223e",
+    "problemsWidget.status.expanded.background.warning": "c38e23",
+    "problemsWidget.status.expanded.background.weakWarning": "573f0f",
+    
+    "problemsWidget.status.expanded.border.error": "de223e",
+    "problemsWidget.status.expanded.border.warning": "c38e23",
+    "problemsWidget.status.expanded.border.weakWarning": "d99e27",
 
     "gitBranchTag.local.text": "Text",
     "gitBranchTag.local.background": "8aadf410%",
@@ -478,6 +477,10 @@
     },
     "comment.doc.value": {
       "fgColor": "Overlay1",
+      "layer": 10
+    },
+    "comment.doc.tag": {
+      "fgColor": "Maroon",
       "layer": 10
     },
     "comment.todo": {
@@ -603,7 +606,7 @@
       }
     },
     "editor.text.scheme": {
-      "fgColor": "Overlay2"
+      "fgColor": "Text"
     },
     "editor.indent.guide": {
       "fgColor": "Overlay0",
@@ -628,7 +631,7 @@
       "layer": 20
     },
     "identifier": {
-      "fgColor": "Maroon",
+      "fgColor": "Text",
       "layer": 10
     },
     "identifier.alias.yaml": {
@@ -644,7 +647,7 @@
       "layer": 20
     },
     "identifier.constant.predefined": {
-      "fgColor": "Peach",
+      "fgColor": "Red",
       "layer": 20
     },
     "identifier.field": {
@@ -684,11 +687,11 @@
       "layer": 20
     },
     "identifier.namedArgument": {
-      "fgColor": "Blue",
+      "fgColor": "Maroon",
       "layer": 20
     },
     "identifier.other": {
-      "fgColor": "Overlay2",
+      "fgColor": "Text",
       "layer": 20
     },
     "identifier.package.go": {
@@ -702,6 +705,12 @@
     "identifier.this": {
       "fgColor": "Mauve",
       "layer": 20
+    },
+    "identifier.this.mutable": {
+      "layer": 20,
+      "decoration": {
+        "color": "Overlay2"
+      }
     },
     "identifier.type": {
       "fgColor": "Yellow",
@@ -743,16 +752,15 @@
       },
       "layer": 1000
     },
-    "identifier.variable.local": {
+    "identifier.variable": {
       "fgColor": "Text",
       "layer": 20
     },
-    "identifier.variable.local.reassigned": {
+    "identifier.variable.mutable": {
+      "layer": 20,
       "decoration": {
         "color": "Overlay2"
-      },
-      "fgColor": "Text",
-      "layer": 20
+      }
     },
     "key.yaml": {
       "fgColor": "Blue",
@@ -890,10 +898,6 @@
       "layer": 50
     },
     "problem.unused": {
-      "decoration": {
-        "color": "Overlay1",
-        "thickness": 2.0
-      },
       "fgColor": "Overlay0",
       "layer": 60
     },
@@ -907,11 +911,11 @@
     },
     "problem.warning.weak": {
       "decoration": {
-        "color": "Yellow",
+        "color": "eed49f40%",
         "thickness": 2.0
       },
       "layer": 40,
-      "stripeColor": "Yellow"
+      "stripeColor": "eed49f40%"
     },
     "propertyName.css": {
       "fgColor": "Blue",
