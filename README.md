@@ -48,6 +48,7 @@ See https://github.com/catppuccin/whiskers.
 ## 💝 Thanks to
 
 - [Krypton](https://github.com/kkrypt0nn)
+- [davfsa](https://github.com/davfsa)
 
 &nbsp;
 

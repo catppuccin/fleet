@@ -837,8 +837,7 @@ whiskers:
       },
       "stripeColor": "{{ teal.hex }}40%"
     },
-    "problem.unknown": {
-    },
+    "problem.unknown": {},
     "problem.unused": {
       "foregroundColor": "Overlay0"
     },

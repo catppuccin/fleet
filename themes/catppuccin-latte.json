@@ -807,8 +807,7 @@
       },
       "stripeColor": "17929940%"
     },
-    "problem.unknown": {
-    },
+    "problem.unknown": {},
     "problem.unused": {
       "foregroundColor": "Overlay0"
     },
