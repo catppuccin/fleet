@@ -139,10 +139,10 @@
     "toggleButton.off.border.disabled": "Transparent",
 
     "iconButton.on.focusBorder": "Transparent",
-    "iconButton.on.background.default": "Transparent",
-    "iconButton.on.background.disabled": "Transparent",
-    "iconButton.on.background.hovered": "Surface0",
-    "iconButton.on.background.pressed": "Surface0",
+    "iconButton.on.background.default": "Surface0",
+    "iconButton.on.background.disabled": "Surface0",
+    "iconButton.on.background.hovered": "Surface1",
+    "iconButton.on.background.pressed": "Surface1",
     "iconButton.on.text.default": "Text",
     "iconButton.on.text.hovered": "Text",
     "iconButton.on.text.pressed": "Text",
@@ -455,151 +455,116 @@
     "ai.error.border": "Red",
     "ai.error.fill": "Transparent"
   },
-  "text-attributes": {
+  "textAttributes": {
     "attributeName.html": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "attributeValue.html": {
-      "fgColor": "Green",
-      "layer": 20
+      "foregroundColor": "Green"
     },
     "boolean": {
-      "fgColor": "Mauve",
-      "layer": 10
+      "foregroundColor": "Mauve"
     },
     "comment": {
-      "fgColor": "Overlay0",
-      "layer": 5
+      "foregroundColor": "Overlay0"
     },
     "comment.doc": {
-      "fgColor": "Overlay0",
-      "layer": 6
+      "foregroundColor": "Overlay0"
     },
     "comment.doc.value": {
-      "fgColor": "Overlay1",
-      "layer": 10
+      "foregroundColor": "Overlay1"
     },
     "comment.doc.tag": {
-      "fgColor": "Maroon",
-      "layer": 10
+      "foregroundColor": "Maroon"
     },
     "comment.todo": {
-      "fgColor": "Yellow",
-      "layer": 10
+      "foregroundColor": "Yellow"
     },
     "debug.currentFrame": {
-      "bgColor": "Blue",
-      "fullLine": true,
-      "layer": -68
+      "backgroundColor": "Blue"
     },
     "diff.added": {
-      "bgColor": "40a02b20%",
-      "fullLine": true,
-      "layer": -69,
+      "backgroundColor": "40a02b20%",
       "stripeColor": "40a02b20%"
     },
     "diff.added.empty": {
-      "bgColor": "40a02b20%",
-      "layer": -60,
+      "backgroundColor": "40a02b20%",
       "showEmptyIntervals": true
     },
     "diff.added.withBorder": {
-      "bgColor": "40a02b20%",
+      "backgroundColor": "40a02b20%",
       "decoration": {
         "color": "40a02b20%",
         "style": "BORDER"
-      },
-      "fullLine": true,
-      "layer": -69
+      }
     },
     "diff.added.word": {
-      "bgColor": "40a02b20%",
-      "layer": -60
+      "backgroundColor": "40a02b20%"
     },
     "diff.conflict.withBorder": {
-      "bgColor": "d20f3920%",
+      "backgroundColor": "d20f3920%",
       "decoration": {
         "color": "Red",
         "style": "BORDER"
-      },
-      "fullLine": true,
-      "layer": -68
+      }
     },
     "diff.deleted": {
-      "bgColor": "d20f3910%",
-      "fullLine": true,
-      "layer": -69,
+      "backgroundColor": "d20f3910%",
       "stripeColor": "d20f3910%"
     },
     "diff.deleted.empty": {
-      "bgColor": "d20f3910%",
-      "layer": -60,
+      "backgroundColor": "d20f3910%",
       "showEmptyIntervals": true
     },
     "diff.deleted.withBorder": {
-      "bgColor": "d20f3910%",
+      "backgroundColor": "d20f3910%",
       "decoration": {
         "color": "d20f3910%",
         "style": "BORDER"
-      },
-      "fullLine": true,
-      "layer": -69
+      }
     },
     "diff.deleted.word": {
-      "bgColor": "d20f3910%",
-      "layer": -60,
+      "backgroundColor": "d20f3910%",
       "showEmptyIntervals": true
     },
     "diff.modified": {
-      "bgColor": "1e66f510%",
-      "fullLine": true,
-      "layer": -69,
+      "backgroundColor": "1e66f510%",
       "stripeColor": "1e66f510%"
     },
     "diff.modified.withBorder": {
-      "bgColor": "1e66f510%",
+      "backgroundColor": "1e66f510%",
       "decoration": {
         "color": "1e66f510%",
         "style": "BORDER"
-      },
-      "fullLine": true,
-      "layer": -69
+      }
     },
     "diff.modified.word": {
-      "bgColor": "1e66f510%",
-      "layer": -60
+      "backgroundColor": "1e66f510%"
     },
     "editor.brace.match": {
-      "bgColor": "Surface1",
-      "layer": 300
+      "backgroundColor": "Surface1"
     },
     "editor.rename.current": {
       "decoration": {
         "color": "Lavender",
         "style": "BORDER"
       },
-      "layer": 100,
       "showEmptyIntervals": true
     },
     "editor.rename.entries": {
-      "bgColor": "Transparent",
-      "layer": 100,
+      "backgroundColor": "Transparent",
       "showEmptyIntervals": true,
       "stripeColor": "Surface0"
     },
     "editor.search.results": {
-      "bgColor": "1e66f540%",
-      "layer": 100,
+      "backgroundColor": "1e66f540%",
       "stripeColor": "Blue"
     },
     "editor.selection": {
-      "bgColor": "Surface2",
-      "layer": 2000
+      "backgroundColor": "Surface2"
     },
     "editor.selection.focused": {
-      "bgColor": "Surface1",
-      "layer": 2000
+      "backgroundColor": "Surface1"
     },
     "editor.text.composable": {
       "decoration": {
@@ -607,192 +572,156 @@
       }
     },
     "editor.text.scheme": {
-      "fgColor": "Text"
+      "foregroundColor": "Text"
     },
-    "editor.indent.guide": {
-      "fgColor": "Overlay0",
+    "editor.indentGuide": {
+      "foregroundColor": "Overlay0",
       "decoration": {
         "style": "DASHED"
       }
     },
-    "editor.indent.guide.current": {
-      "fgColor": "Overlay2",
+    "editor.indentGuide.current": {
+      "foregroundColor": "Overlay2",
       "decoration": {
         "style": "DASHED"
       }
     },
-    "editor.indent.guide.declaration": {
-      "fgColor": "Surface0"
+    "editor.indentGuide.declaration": {
+      "foregroundColor": "Surface0"
     },
-    "editor.indent.guide.declaration.current": {
-      "fgColor": "Overlay0"
+    "editor.indentGuide.declaration.current": {
+      "foregroundColor": "Overlay0"
     },
     "entityReference.html": {
-      "fgColor": "Red",
-      "layer": 20
+      "foregroundColor": "Red"
     },
     "identifier": {
-      "fgColor": "Text",
-      "layer": 10
+      "foregroundColor": "Text"
     },
     "identifier.alias.yaml": {
-      "fgColor": "Peach",
-      "layer": 20
+      "foregroundColor": "Peach"
     },
     "identifier.anchor.yaml": {
-      "fgColor": "Peach",
-      "layer": 20
+      "foregroundColor": "Peach"
     },
     "identifier.constant": {
-      "fgColor": "Peach",
-      "layer": 20
+      "foregroundColor": "Peach"
     },
     "identifier.constant.predefined": {
-      "fgColor": "Red",
-      "layer": 20
+      "foregroundColor": "Red"
     },
     "identifier.field": {
-      "fgColor": "Text",
-      "layer": 20
+      "foregroundColor": "Text"
     },
     "identifier.field.static": {
-      "fgColor": "Teal",
-      "layer": 20
+      "foregroundColor": "Teal"
     },
     "identifier.function.call": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "identifier.function.call.package": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "identifier.function.call.suspend": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "identifier.function.declaration": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "identifier.interface": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "identifier.method.static": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "identifier.methodReceiver.go": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "identifier.namedArgument": {
-      "fgColor": "Maroon",
-      "layer": 20
+      "foregroundColor": "Maroon"
     },
     "identifier.other": {
-      "fgColor": "Text",
-      "layer": 20
+      "foregroundColor": "Text"
     },
     "identifier.package.go": {
-      "fgColor": "Peach",
-      "layer": 20
+      "foregroundColor": "Peach"
     },
     "identifier.parameter": {
-      "fgColor": "Maroon",
-      "layer": 20
+      "foregroundColor": "Maroon"
     },
     "identifier.this": {
-      "fgColor": "Mauve",
-      "layer": 20
+      "foregroundColor": "Mauve"
     },
     "identifier.this.mutable": {
-      "layer": 20,
       "decoration": {
         "color": "Overlay2"
       }
     },
     "identifier.type": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "identifier.type.class": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "identifier.type.enum": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "identifier.type.struct": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "identifier.type.valueType": {
-      "fgColor": "Lavender",
-      "layer": 20
+      "foregroundColor": "Lavender"
     },
     "identifier.typeDeclaration.go": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "identifier.typeParameter": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "identifier.typeReference.go": {
-      "fgColor": "Teal",
-      "layer": 20
+      "foregroundColor": "Teal"
     },
     "identifier.underCaret": {
-      "bgColor": "Transparent",
+      "backgroundColor": "Transparent",
       "decoration": {
         "color": "Surface2",
         "style": "BORDER"
-      },
-      "layer": 1000
+      }
     },
     "identifier.variable": {
-      "fgColor": "Text",
-      "layer": 20
+      "foregroundColor": "Text"
     },
     "identifier.variable.mutable": {
-      "layer": 20,
       "decoration": {
         "color": "Overlay2"
       }
     },
+    "key.json": {
+      "foregroundColor": "Blue"
+    },
     "key.yaml": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "keyword": {
-      "fgColor": "Mauve",
-      "layer": 20
+      "foregroundColor": "Mauve"
     },
     "keyword.css": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "keyword.extend.css": {
-      "fgColor": "Red",
-      "layer": 20
+      "foregroundColor": "Red"
     },
     "keyword.global.css": {
-      "fgColor": "Teal",
-      "layer": 20
+      "foregroundColor": "Teal"
     },
     "keyword.important.css": {
-      "fgColor": "Lavender",
+      "foregroundColor": "Lavender",
       "fontModifier": {
         "italic": true
-      },
-      "layer": 20
+      }
     },
     "keyword.typeModifier": {
-      "fgColor": "Mauve",
-      "layer": 20
+      "foregroundColor": "Mauve"
     },
     "link": {},
     "link.always.visible": {
@@ -802,80 +731,65 @@
       "decoration": {
         "color": "Blue"
       },
-      "fgColor": "Sapphire",
-      "layer": 100
+      "foregroundColor": "Sapphire"
     },
     "markup.bold": {
-      "fgColor": "Red",
+      "foregroundColor": "Red",
       "fontModifier": {
         "bold": true
-      },
-      "layer": 20
+      }
     },
     "markup.code.block": {
-      "fgColor": "Green",
-      "layer": 20
+      "foregroundColor": "Green"
     },
     "markup.heading": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "markup.href": {
       "decoration": {},
-      "fgColor": "Rosewater",
+      "foregroundColor": "Rosewater",
       "fontModifier": {
         "italic": true
-      },
-      "layer": 20
+      }
     },
     "markup.italic": {
-      "fgColor": "Red",
+      "foregroundColor": "Red",
       "fontModifier": {
         "italic": true
-      },
-      "layer": 20
+      }
     },
     "metadata": {
-      "fgColor": "Yellow",
-      "layer": 25
+      "foregroundColor": "Yellow"
     },
     "metadata.structTag.key.go": {
-      "fgColor": "Peach",
-      "layer": 20
+      "foregroundColor": "Peach"
     },
     "metadata.structTag.value.go": {
-      "fgColor": "Green",
-      "layer": 20
+      "foregroundColor": "Green"
     },
     "number": {
-      "fgColor": "Peach",
-      "layer": 10
+      "foregroundColor": "Peach"
     },
     "number.css": {
-      "fgColor": "Peach",
-      "layer": 20
+      "foregroundColor": "Peach"
     },
     "number.unit.css": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "other.html": {
-      "fgColor": "Text",
-      "layer": 20
+      "foregroundColor": "Text"
     },
     "problem.deprecated": {
       "decoration": {
         "color": "Overlay2",
         "position": "THROUGH"
-      },
-      "layer": 30
+      }
     },
     "problem.error": {
       "decoration": {
         "color": "Red",
         "thickness": 2.0
       },
-      "layer": 70,
       "stripeColor": "Red"
     },
     "problem.error.badCharacter": {
@@ -883,7 +797,6 @@
         "color": "Red",
         "thickness": 2.0
       },
-      "layer": 100,
       "showEmptyIntervals": true,
       "stripeColor": "Red"
     },
@@ -892,22 +805,18 @@
         "color": "17929940%",
         "style": "BORDER"
       },
-      "layer": 50,
       "stripeColor": "17929940%"
     },
     "problem.unknown": {
-      "layer": 50
     },
     "problem.unused": {
-      "fgColor": "Overlay0",
-      "layer": 60
+      "foregroundColor": "Overlay0"
     },
     "problem.warning": {
       "decoration": {
         "color": "Yellow",
         "thickness": 2.0
       },
-      "layer": 60,
       "stripeColor": "Yellow"
     },
     "problem.warning.weak": {
@@ -915,110 +824,85 @@
         "color": "df8e1d40%",
         "thickness": 2.0
       },
-      "layer": 40,
       "stripeColor": "df8e1d40%"
     },
     "propertyName.css": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "propertyValue.css": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "punctuation": {
-      "fgColor": "Sky",
-      "layer": 20
+      "foregroundColor": "Sky"
     },
     "punctuation.css": {
-      "fgColor": "Sky",
-      "layer": 20
+      "foregroundColor": "Sky"
     },
     "punctuation.operator": {
-      "fgColor": "Sky",
-      "layer": 20
+      "foregroundColor": "Sky"
     },
     "punctuation.operator.merge.yaml": {
-      "fgColor": "Yellow",
-      "layer": 20
+      "foregroundColor": "Yellow"
     },
     "selector.class.css": {
-      "fgColor": "Teal",
-      "layer": 20
+      "foregroundColor": "Teal"
     },
     "selector.css": {
-      "fgColor": "Red",
-      "layer": 20
+      "foregroundColor": "Red"
     },
     "selector.id.css": {
-      "fgColor": "Blue",
-      "layer": 20
+      "foregroundColor": "Blue"
     },
     "selector.pseudo.css": {
-      "fgColor": "Teal",
-      "layer": 20
+      "foregroundColor": "Teal"
     },
     "selector.tag.css": {
-      "fgColor": "Mauve",
-      "layer": 20
+      "foregroundColor": "Mauve"
     },
     "snippet": {
-      "bgColor": "Blue",
+      "backgroundColor": "Blue",
       "borderRadius": 4.0,
       "showEmptyIntervals": true
     },
     "string": {
-      "fgColor": "Green",
-      "layer": 15
+      "foregroundColor": "Green"
     },
     "string.binary": {
-      "fgColor": "Green",
-      "layer": 15
+      "foregroundColor": "Green"
     },
     "string.css": {
-      "fgColor": "Green",
-      "layer": 20
+      "foregroundColor": "Green"
     },
     "string.escape": {
-      "fgColor": "Pink",
-      "layer": 25
+      "foregroundColor": "Pink"
     },
     "string.escape.alternative": {
-      "fgColor": "Pink",
-      "layer": 25
+      "foregroundColor": "Pink"
     },
     "string.escape.unicode": {
-      "fgColor": "Pink",
-      "layer": 25
+      "foregroundColor": "Pink"
     },
     "string.formatItem": {
-      "fgColor": "Peach",
-      "layer": 25
+      "foregroundColor": "Peach"
     },
     "string.regexp": {
-      "fgColor": "Green",
-      "layer": 25
+      "foregroundColor": "Green"
     },
     "tag.html": {
-      "fgColor": "Text",
-      "layer": 20
+      "foregroundColor": "Text"
     },
     "tagName.custom.html": {
-      "fgColor": "Mauve",
-      "layer": 20
+      "foregroundColor": "Mauve"
     },
     "tagName.html": {
-      "fgColor": "Mauve",
-      "layer": 20
+      "foregroundColor": "Mauve"
     },
     "transparent": {},
     "url.css": {
-      "fgColor": "Green",
-      "layer": 20
+      "foregroundColor": "Green"
     },
     "value.yaml": {
-      "fgColor": "Text",
-      "layer": 2
+      "foregroundColor": "Text"
     }
   },
   "palette": {
