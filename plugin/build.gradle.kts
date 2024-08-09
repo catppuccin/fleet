@@ -21,4 +21,10 @@ fleetPlugin {
     fleetRuntime {
         version = libs.versions.fleet.runtime
     }
+
+    publishing {
+        // https://github.com/JetBrains/fleet-theme-plugin-template/issues/2#issuecomment-2278303755
+        // 29aa2a92-b107-4388-8ea5-39636c6cce03 is the ID of @sgoudham
+        vendorId = "29aa2a92-b107-4388-8ea5-39636c6cce03"
+    }
 }

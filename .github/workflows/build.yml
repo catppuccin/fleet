@@ -31,9 +31,7 @@ jobs:
           cache-encryption-key: ${{ secrets.GRADLE_ENCRYPTION_KEY }}
 
       - name: Build Plugin
-        run: "./gradlew clean distZip -Porg.jetbrains.fleet-plugin.marketplaceUploadToken=${{ env.MARKETPLACE_TOKEN }}"
-        env:
-          MARKETPLACE_TOKEN: ${{ secrets.MARKETPLACE_TOKEN }}
+        run: "./gradlew clean distZip"
 
       - name: Upload Zip
         uses: actions/upload-artifact@v4
