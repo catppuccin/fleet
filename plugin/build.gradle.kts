@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.fleet.plugin)
 }
 
-version = "0.1.0"
+version = "1.0.0"
 
 fleetPlugin {
     id = "com.github.catppuccin.fleet"
@@ -24,7 +24,7 @@ fleetPlugin {
 
     publishing {
         // https://github.com/JetBrains/fleet-theme-plugin-template/issues/2#issuecomment-2278303755
-        // 29aa2a92-b107-4388-8ea5-39636c6cce03 is the ID of @sgoudham
+        // The current vendorId is @sgoudham
         vendorId = "29aa2a92-b107-4388-8ea5-39636c6cce03"
     }
 }
