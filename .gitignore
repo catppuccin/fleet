@@ -1,0 +1,14 @@
+# Ignore fleet config
+.fleet/
+
+# Ignore Gradle project-specific cache directory
+.gradle
+.idea
+.DS_Store
+
+# Ignore Gradle build output directory
+build
+config
+system
+
+fleetDistribution/
