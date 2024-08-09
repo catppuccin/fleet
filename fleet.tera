@@ -4,7 +4,7 @@ whiskers:
   version: 2.4.0
   matrix:
     - flavor
-  filename: "themes/catppuccin-{{ flavor.identifier }}.json"
+  filename: "plugin/frontendImpl/src/jvmMain/resources/catppuccin-{{ flavor.identifier }}.json"
 ---
 
 {%- if flavor.dark -%}
