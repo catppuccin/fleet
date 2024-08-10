@@ -24,7 +24,7 @@ fleetPlugin {
 
     publishing {
         // https://github.com/JetBrains/fleet-theme-plugin-template/issues/2#issuecomment-2278303755
-        // The current vendorId is @sgoudham
-        vendorId = "29aa2a92-b107-4388-8ea5-39636c6cce03"
+        // The current vendorId is @davfsa
+        vendorId = "9e33bf00-1734-47a7-aaa6-d3255bf98313"
     }
 }
