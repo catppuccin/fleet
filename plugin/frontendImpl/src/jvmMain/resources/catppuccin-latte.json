@@ -67,7 +67,6 @@
     "button.secondary.border.hovered": "Transparent",
     "button.secondary.border.pressed": "Transparent",
 
-    "button.positive.border.default": "Transparent",
     "button.positive.focusBorder": "Transparent",
     "button.positive.focusOutline": "Transparent",
     "button.positive.background.default": "Green",
@@ -83,7 +82,6 @@
     "button.positive.border.hovered": "Transparent",
     "button.positive.border.pressed": "Transparent",
 
-    "button.dangerous.border.default": "Transparent",
     "button.dangerous.focusBorder": "Transparent",
     "button.dangerous.focusOutline": "Transparent",
     "button.dangerous.background.default": "Red",
@@ -386,7 +384,7 @@
 
     "problemsWidget.checkmark.foreground": "Green",
     "problemsWidget.checkmark.background": "40a02b30%",
-    "problemsWidget.status.expanded.background.error": "ee1242",
+    "problemsWidget.status.expanded.background.error": "be0e34",
     "problemsWidget.status.expanded.background.warning": "cb821b",
     
     "problemsWidget.status.expanded.background.weakWarning": "f9e9d3",

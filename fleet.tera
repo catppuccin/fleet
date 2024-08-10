@@ -88,7 +88,6 @@ whiskers:
     "button.secondary.border.hovered": "Transparent",
     "button.secondary.border.pressed": "Transparent",
 
-    "button.positive.border.default": "Transparent",
     "button.positive.focusBorder": "Transparent",
     "button.positive.focusOutline": "Transparent",
     "button.positive.background.default": "Green",
@@ -104,7 +103,6 @@ whiskers:
     "button.positive.border.hovered": "Transparent",
     "button.positive.border.pressed": "Transparent",
 
-    "button.dangerous.border.default": "Transparent",
     "button.dangerous.focusBorder": "Transparent",
     "button.dangerous.focusOutline": "Transparent",
     "button.dangerous.background.default": "Red",
@@ -413,7 +411,7 @@ whiskers:
 
     "problemsWidget.checkmark.foreground": "Green",
     "problemsWidget.checkmark.background": "{{ green.hex }}30%",
-    "problemsWidget.status.expanded.background.error": "{{ red | mod(lightness=50) | get(key="hex") }}",
+    "problemsWidget.status.expanded.background.error": "{{ red | mod(lightness=40) | get(key="hex") }}",
     "problemsWidget.status.expanded.background.warning": "{{ yellow | mod(lightness=45) | get(key="hex") }}",
     {% if flavor.dark -%}
     "problemsWidget.status.expanded.background.weakWarning": "{{ yellow | mod(lightness=20) | get(key="hex") }}",
