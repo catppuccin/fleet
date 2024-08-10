@@ -32,7 +32,7 @@ whiskers:
     "shadow.border": "Mantle",
 
     "background.default": "Base",
-    "background.primary": "Crust",
+    "background.primary": "Base",
     "background.secondary": "Mantle",
     "background.disabled": "Transparent",
     "background.dimmed": "Transparent",
@@ -398,7 +398,7 @@ whiskers:
     "listItem.border.hovered": "Transparent",
     "listItem.border.focused": "Transparent",
     "listItem.border.selected": "Transparent",
-    "listItem.background.default": "Transparent",
+    "listItem.background.default": "Base",
     "listItem.background.hovered": "Mantle",
     "listItem.background.focused": "Mantle",
     "listItem.background.selected": "Mantle",
