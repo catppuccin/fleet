@@ -40,6 +40,10 @@
 2. Search for **"Catppuccin Fleet Theme"** and press `Add Globally`
 3. Select your desired theme! (`⚙`️→ `Themes`)
 
+> [!IMPORTANT]  
+> You cannot have any files in your `~/.fleet/theme` folder named `catppuccin-*.json`
+> (where * stands for any string of characters) or the plugin will fail to load.
+
 ## Contributing
 
 See https://github.com/catppuccin/whiskers and the `fleet.tera` file
