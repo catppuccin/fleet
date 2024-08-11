@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "last-release-sha": "a9673b64c43705498ad22a179541b401389eeb7d",
+  "packages": {
+    ".": {
+      "package-name": "",
+      "release-type": "simple",
+      "extra-files": [
+        {
+          "type": "generic",
+          "path": "catppuccin-theme/build.gradle.kts"
+        }
+      ]
+    }
+  }
+}
