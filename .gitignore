@@ -1,12 +1,15 @@
-# Ignore fleet config
-.fleet/
+# Fleet config
+.fleet/config.json
 
-# Ignore Gradle project-specific cache directory
+# Gradle project-specific cache directory
 .gradle
 .idea
 .DS_Store
 
-# Ignore Gradle build output directory
+# Kotlin directory
+.kotlin
+
+# Gradle build output directory
 build
 config
 system

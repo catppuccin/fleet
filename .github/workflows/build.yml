@@ -37,4 +37,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: "Catppuccin Fleet Theme"
-          path: plugin/build/pluginDistribution/*.zip
+          path: catppuccin-theme/build/pluginDistribution/*.zip

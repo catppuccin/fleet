@@ -1,7 +1,7 @@
 rootProject.name = "Catppuccin Fleet Theme"
 
-include(":plugin")
-include(":plugin:frontendImpl")
+include(":catppuccin-theme")
+include(":catppuccin-theme:frontendImpl")
 
 pluginManagement {
     repositories {
