@@ -47,3 +47,8 @@ jobs:
         run: "./gradlew clean uploadPlugin -Porg.jetbrains.fleet-plugin.marketplaceUploadToken=${{ env.MARKETPLACE_TOKEN }}"
         env:
           MARKETPLACE_TOKEN: ${{ secrets.MARKETPLACE_TOKEN }}
+
+      - name: Upload Zip
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload ${{ needs.release-please.outputs.tag_name }} catppuccin-theme/build/pluginDistribution/*.zip --clobber
