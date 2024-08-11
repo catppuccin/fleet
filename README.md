@@ -34,16 +34,19 @@
 <img src="assets/mocha.webp"/>
 </details>
 
-## Usage
+## Installation and usage
 
-1. Clone this repository locally
-2. Go to `~/.fleet`
-3. Create a `themes` folder if not already present
-4. Copy the content of the [themes](themes/) folder in the `themes` folder created before
+1. Open the plugins page (`⚙`️→ `Plugins`)
+2. Search for **"Catppuccin Fleet Theme"** and press `Add Globally`
+3. Select your desired theme! (`⚙`️→ `Themes`)
+
+> [!IMPORTANT]  
+> You cannot have any files in your `~/.fleet/theme` folder named `catppuccin-*.json`
+> (where * stands for any string of characters) or the plugin will fail to load.
 
 ## Contributing
 
-See https://github.com/catppuccin/whiskers.
+See https://github.com/catppuccin/whiskers and the `fleet.tera` file
 
 ## 💝 Thanks to
 
