@@ -41,8 +41,8 @@
     "button.primary.focusOutline": "Transparent",
     "button.primary.background.default": "Mauve",
     "button.primary.background.disabled": "Overlay1",
-    "button.primary.background.hovered": "ca9ee670%",
-    "button.primary.background.pressed": "ca9ee660%",
+    "button.primary.background.hovered": "#ca9ee6cc",
+    "button.primary.background.pressed": "#ca9ee699",
     "button.primary.text.default": "Crust",
     "button.primary.text.disabled": "Subtext0",
     "button.primary.text.hovered": "Crust",
@@ -56,8 +56,8 @@
     "button.secondary.focusOutline": "Transparent",
     "button.secondary.background.default": "Surface0",
     "button.secondary.background.disabled": "Surface0",
-    "button.secondary.background.hovered": "41455960%",
-    "button.secondary.background.pressed": "41455940%",
+    "button.secondary.background.hovered": "#41455999",
+    "button.secondary.background.pressed": "#41455966",
     "button.secondary.text.default": "Text",
     "button.secondary.text.disabled": "Surface2",
     "button.secondary.text.hovered": "Text",
@@ -70,9 +70,9 @@
     "button.positive.focusBorder": "Transparent",
     "button.positive.focusOutline": "Transparent",
     "button.positive.background.default": "Green",
-    "button.positive.background.disabled": "a6d18940%",
-    "button.positive.background.hovered": "a6d18970%",
-    "button.positive.background.pressed": "a6d18960%",
+    "button.positive.background.disabled": "#a6d18966",
+    "button.positive.background.hovered": "#a6d189b3",
+    "button.positive.background.pressed": "#a6d18999",
     "button.positive.text.default": "Crust",
     "button.positive.text.disabled": "Subtext0",
     "button.positive.text.hovered": "Crust",
@@ -85,9 +85,9 @@
     "button.dangerous.focusBorder": "Transparent",
     "button.dangerous.focusOutline": "Transparent",
     "button.dangerous.background.default": "Red",
-    "button.dangerous.background.disabled": "e7828440%",
-    "button.dangerous.background.hovered": "e7828470%",
-    "button.dangerous.background.pressed": "e7828460%",
+    "button.dangerous.background.disabled": "#e7828466",
+    "button.dangerous.background.hovered": "#e78284b3",
+    "button.dangerous.background.pressed": "#e7828499",
     "button.dangerous.text.default": "Crust",
     "button.dangerous.text.disabled": "Subtext0",
     "button.dangerous.text.hovered": "Crust",
@@ -101,8 +101,8 @@
     "button.tile.focusOutline": "Transparent",
     "button.tile.background.default": "Mantle",
     "button.tile.background.disabled": "Mantle",
-    "button.tile.background.hovered": "41455960%",
-    "button.tile.background.pressed": "41455940%",
+    "button.tile.background.hovered": "#41455999",
+    "button.tile.background.pressed": "#41455966",
     "button.tile.text.default": "Text",
     "button.tile.text.disabled": "Surface2",
     "button.tile.text.hovered": "Text",
@@ -131,8 +131,8 @@
     "toggleButton.on.focusBorder": "Transparent",
     "toggleButton.on.background.default": "Lavender",
     "toggleButton.on.background.disabled": "Overlay0",
-    "toggleButton.on.background.hovered": "babbf170%",
-    "toggleButton.on.background.pressed": "babbf160%",
+    "toggleButton.on.background.hovered": "#babbf1b3",
+    "toggleButton.on.background.pressed": "#babbf199",
     "toggleButton.on.text.default": "Crust",
     "toggleButton.on.text.hovered": "Crust",
     "toggleButton.on.text.pressed": "Crust",
@@ -142,8 +142,8 @@
     "toggleButton.off.focusBorder": "Transparent",
     "toggleButton.off.background.default": "Surface0",
     "toggleButton.off.background.disabled": "Overlay0",
-    "toggleButton.off.background.hovered": "41455960%",
-    "toggleButton.off.background.pressed": "41455940%",
+    "toggleButton.off.background.hovered": "#41455999",
+    "toggleButton.off.background.pressed": "#41455966",
     "toggleButton.off.text.default": "Text",
     "toggleButton.off.text.hovered": "Text",
     "toggleButton.off.text.pressed": "Text",
@@ -210,8 +210,8 @@
     "editor.text": "Text",
     "editor.caret.background": "Text",
     "editor.whitespace.text": "Text",
-    "editor.currentLine.background.default": "73799410%",
-    "editor.currentLine.background.focused": "73799410%",
+    "editor.currentLine.background.default": "#7379941a",
+    "editor.currentLine.background.focused": "#7379941a",
     "editor.lineNumber.current": "Mauve",
     "editor.lineNumber.default": "Overlay0",
     "editor.gitDiff.background.added": "Green",
@@ -251,10 +251,8 @@
     "completion.match.background": "Transparent",
     "completion.match.text": "Flamingo",
 
-    "search.match.background": "e5c89080%",
+    "search.match.background": "#e5c890cc",
     "search.match.text": "Crust",
-
-    "dnd": "ffffff20%",
 
     "icon.background.blue": "Blue",
     "icon.background.green": "Green",
@@ -307,10 +305,10 @@
     "progressBar.indeterminate.foreground": "Pink",
     "progressBar.indeterminate.foregroundAccent": "Mauve",
 
-    "scrollbar.thumb.default": "ffffff20%",
-    "scrollbar.thumb.hovered": "ffffff40%",
+    "scrollbar.thumb.default": "#ffffff33",
+    "scrollbar.thumb.hovered": "#ffffff66",
     "scrollbar.track.default": "Transparent",
-    "scrollbar.track.hovered": "ffffff20%",
+    "scrollbar.track.hovered": "#ffffff33",
 
     "tab.background.default": "Mantle",
     "tab.background.selected": "Surface0",
@@ -380,23 +378,23 @@
 
     "settings.modified.indicator": "Yellow",
 
-    "dragAndDrop.background": "ffffff10%",
+    "dragAndDrop.background": "#ffffff1A",
 
     "problemsWidget.checkmark.foreground": "Green",
-    "problemsWidget.checkmark.background": "a6d18930%",
-    "problemsWidget.status.expanded.background.error": "ab2123",
-    "problemsWidget.status.expanded.background.warning": "ba8b2c",
-    "problemsWidget.status.expanded.background.weakWarning": "533e13",
+    "problemsWidget.checkmark.background": "#a6d1894d",
+    "problemsWidget.status.expanded.background.error": "#ab2123",
+    "problemsWidget.status.expanded.background.warning": "#ba8b2c",
+    "problemsWidget.status.expanded.background.weakWarning": "#533e13",
     
-    "problemsWidget.status.expanded.border.error": "d62a2d",
-    "problemsWidget.status.expanded.border.warning": "ba8b2c",
-    "problemsWidget.status.expanded.border.weakWarning": "cf9a31",
+    "problemsWidget.status.expanded.border.error": "#d62a2d",
+    "problemsWidget.status.expanded.border.warning": "#ba8b2c",
+    "problemsWidget.status.expanded.border.weakWarning": "#cf9a31",
 
     "gitBranchTag.local.text": "Text",
-    "gitBranchTag.local.background": "8caaee10%",
+    "gitBranchTag.local.background": "#8caaee1a",
     "gitBranchTag.local.border": "Blue",
     "gitBranchTag.remote.text": "Text",
-    "gitBranchTag.remote.background": "ca9ee610%",
+    "gitBranchTag.remote.background": "#ca9ee61a",
     "gitBranchTag.remote.border": "Mauve",
 
     "remoteWorkspaceStatusLabel.background.ssh": "Green",
@@ -408,16 +406,16 @@
     "remoteWorkspaceStatusLabel.text.docker": "Crust",
     "remoteWorkspaceStatusLabel.text.space": "Crust",
 
-    "remote.userColor.background.one": "f2d5cf70%",
-    "remote.userColor.background.two": "f4b8e470%",
-    "remote.userColor.background.three": "babbf170%",
-    "remote.userColor.background.four": "ca9ee670%",
-    "remote.userColor.background.five": "ea999c70%",
-    "remote.userColor.background.six": "ef9f7670%",
-    "remote.userColor.background.seven": "e5c89070%",
-    "remote.userColor.background.eight": "a6d18970%",
-    "remote.userColor.background.nine": "81c8be70%",
-    "remote.userColor.background.ten": "8caaee70%",
+    "remote.userColor.background.one": "#f2d5cfb3",
+    "remote.userColor.background.two": "#f4b8e4b3",
+    "remote.userColor.background.three": "#babbf1b3",
+    "remote.userColor.background.four": "#ca9ee6b3",
+    "remote.userColor.background.five": "#ea999cb3",
+    "remote.userColor.background.six": "#ef9f76b3",
+    "remote.userColor.background.seven": "#e5c890b3",
+    "remote.userColor.background.eight": "#a6d189b3",
+    "remote.userColor.background.nine": "#81c8beb3",
+    "remote.userColor.background.ten": "#8caaeeb3",
 
     "ai.inputField.background.default": "Mantle",
     "ai.inputField.border.default": "Transparent",
@@ -432,8 +430,8 @@
     "ai.button.default.focusOutline": "Transparent",
     "ai.button.default.background.default": "Surface0",
     "ai.button.default.background.disabled": "Surface0",
-    "ai.button.default.background.hovered": "41455960%",
-    "ai.button.default.background.pressed": "41455940%",
+    "ai.button.default.background.hovered": "#41455999",
+    "ai.button.default.background.pressed": "#41455966",
     "ai.button.default.text.default": "Text",
     "ai.button.default.text.disabled": "Surface2",
     "ai.button.default.text.hovered": "Text",
@@ -447,8 +445,8 @@
     "ai.button.recipe.focusOutline": "Transparent",
     "ai.button.recipe.background.default": "Surface0",
     "ai.button.recipe.background.disabled": "Surface0",
-    "ai.button.recipe.background.hovered": "41455960%",
-    "ai.button.recipe.background.pressed": "41455940%",
+    "ai.button.recipe.background.hovered": "#41455999",
+    "ai.button.recipe.background.pressed": "#41455966",
     "ai.button.recipe.text.default": "Text",
     "ai.button.recipe.text.disabled": "Surface2",
     "ai.button.recipe.text.hovered": "Text",
@@ -460,11 +458,11 @@
 
     "ai.icon.text": "Mauve",
     "ai.icon.background": "Mauve",
-    "ai.icon.background.secondary": "ca9ee620%",
+    "ai.icon.background.secondary": "#ca9ee633",
 
     "ai.user.icon.text": "Blue",
     "ai.user.icon.background": "Blue",
-    "ai.user.icon.background.secondary": "8caaee20%",
+    "ai.user.icon.background.secondary": "#8caaee33",
 
     "ai.error.border": "Red",
     "ai.error.fill": "Transparent"
@@ -498,62 +496,64 @@
       "backgroundColor": "Blue"
     },
     "diff.added": {
-      "backgroundColor": "a6d18920%",
-      "stripeColor": "a6d18920%"
-    },
-    "diff.added.empty": {
-      "backgroundColor": "a6d18920%",
-      "showEmptyIntervals": true
-    },
-    "diff.added.withBorder": {
-      "backgroundColor": "a6d18920%",
-      "decoration": {
-        "color": "a6d18920%",
-        "style": "BORDER"
-      }
+      "backgroundColor": "#586e5f"
     },
     "diff.added.word": {
-      "backgroundColor": "a6d18920%"
+      "backgroundColor": "#586e5f"
     },
-    "diff.conflict.withBorder": {
-      "backgroundColor": "e7828430%",
-      "decoration": {
-        "color": "Red",
-        "style": "BORDER"
+    "diff.added.withBorder": {
+      "backgroundColor": "#586e5f",
+      "border": {
+        "color": "Green"
       }
+    },
+    "diff.added.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "Green"
+      }
+    },
+    "diff.added.empty": {
+      "backgroundColor": "#586e5f"
     },
     "diff.deleted": {
-      "backgroundColor": "e7828420%",
-      "stripeColor": "e7828420%"
-    },
-    "diff.deleted.empty": {
-      "backgroundColor": "e7828420%",
-      "showEmptyIntervals": true
-    },
-    "diff.deleted.withBorder": {
-      "backgroundColor": "e7828420%",
-      "decoration": {
-        "color": "e7828420%",
-        "style": "BORDER"
-      }
+      "backgroundColor": "#6c495b"
     },
     "diff.deleted.word": {
-      "backgroundColor": "e7828420%",
-      "showEmptyIntervals": true
+      "backgroundColor": "#6c495b"
     },
-    "diff.modified": {
-      "backgroundColor": "8caaee20%",
-      "stripeColor": "8caaee20%"
-    },
-    "diff.modified.withBorder": {
-      "backgroundColor": "8caaee20%",
-      "decoration": {
-        "color": "8caaee20%",
-        "style": "BORDER"
+    "diff.deleted.withBorder": {
+      "backgroundColor": "#6c495b",
+      "border": {
+        "color": "Red"
       }
     },
+    "diff.deleted.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "Red"
+      }
+    },
+    "diff.deleted.empty": {
+      "backgroundColor": "#6c495b"
+    },
+    "diff.modified": {
+      "backgroundColor": "#4a587d"
+    },
     "diff.modified.word": {
-      "backgroundColor": "8caaee20%"
+      "backgroundColor": "#5673a7"
+    },
+    "diff.modified.withBorder": {
+      "backgroundColor": "#4a587d",
+      "border": {
+        "color": "Blue"
+      }
+    },
+    "diff.modified.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "Blue"
+      }
     },
     "editor.brace.match": {
       "backgroundColor": "Surface1"
@@ -571,7 +571,7 @@
       "stripeColor": "Surface0"
     },
     "editor.search.results": {
-      "backgroundColor": "8caaee40%",
+      "backgroundColor": "#8caaee66",
       "stripeColor": "Blue"
     },
     "editor.selection": {
@@ -816,10 +816,10 @@
     },
     "problem.info": {
       "decoration": {
-        "color": "81c8be40%",
+        "color": "#81c8be66",
         "style": "BORDER"
       },
-      "stripeColor": "81c8be40%"
+      "stripeColor": "#81c8be66"
     },
     "problem.unknown": {},
     "problem.unused": {
@@ -834,10 +834,10 @@
     },
     "problem.warning.weak": {
       "decoration": {
-        "color": "e5c89040%",
+        "color": "#e5c89066",
         "thickness": 2.0
       },
-      "stripeColor": "e5c89040%"
+      "stripeColor": "#e5c89066"
     },
     "propertyName.css": {
       "foregroundColor": "Blue"
@@ -873,9 +873,14 @@
       "foregroundColor": "Mauve"
     },
     "snippet": {
-      "backgroundColor": "Blue",
-      "borderRadius": 4.0,
-      "showEmptyIntervals": true
+      "border": {
+       "color": "Surface1"
+      }
+    },
+    "snippet.selected": {
+      "border": {
+        "color": "Blue"
+      }
     },
     "string": {
       "foregroundColor": "Green"
@@ -919,32 +924,32 @@
     }
   },
   "palette": {
-    "Rosewater": "f2d5cf",
-    "Flamingo": "eebebe",
-    "Pink": "f4b8e4",
-    "Mauve": "ca9ee6",
-    "Red": "e78284",
-    "Maroon": "ea999c",
-    "Peach": "ef9f76",
-    "Yellow": "e5c890",
-    "Green": "a6d189",
-    "Teal": "81c8be",
-    "Sky": "99d1db",
-    "Sapphire": "85c1dc",
-    "Blue": "8caaee",
-    "Lavender": "babbf1",
-    "Text": "c6d0f5",
-    "Subtext1": "b5bfe2",
-    "Subtext0": "a5adce",
-    "Overlay2": "949cbb",
-    "Overlay1": "838ba7",
-    "Overlay0": "737994",
-    "Surface2": "626880",
-    "Surface1": "51576d",
-    "Surface0": "414559",
-    "Base": "303446",
-    "Mantle": "292c3c",
-    "Crust": "232634",
-    "Transparent": "ffffff0%"
+    "Rosewater": "#f2d5cf",
+    "Flamingo": "#eebebe",
+    "Pink": "#f4b8e4",
+    "Mauve": "#ca9ee6",
+    "Red": "#e78284",
+    "Maroon": "#ea999c",
+    "Peach": "#ef9f76",
+    "Yellow": "#e5c890",
+    "Green": "#a6d189",
+    "Teal": "#81c8be",
+    "Sky": "#99d1db",
+    "Sapphire": "#85c1dc",
+    "Blue": "#8caaee",
+    "Lavender": "#babbf1",
+    "Text": "#c6d0f5",
+    "Subtext1": "#b5bfe2",
+    "Subtext0": "#a5adce",
+    "Overlay2": "#949cbb",
+    "Overlay1": "#838ba7",
+    "Overlay0": "#737994",
+    "Surface2": "#626880",
+    "Surface1": "#51576d",
+    "Surface0": "#414559",
+    "Base": "#303446",
+    "Mantle": "#292c3c",
+    "Crust": "#232634",
+    "Transparent": "#ffffff00"
   }
 }

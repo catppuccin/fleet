@@ -2,21 +2,28 @@
 accent: mauve
 whiskers:
   version: 2.4.0
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
   matrix:
     - flavor
   filename: "catppuccin-theme/frontendImpl/src/jvmMain/resources/catppuccin-{{ flavor.identifier }}.json"
 ---
 
+{#-
+Fleet doesn't deal well with transparent colours for diff, so we need to colour pick them
+and set them without the transparency value.
+-#}
 {%- if flavor.dark -%}
-{%- set transparent = "ffffff" -%}
-{%- set diff_added_opacity = "20%" -%}
-{%- set diff_conflict_opacity = "30%" -%}
-{%- set diff_deleted_opacity = "20%" -%}
+{%- set transparent = "#ffffff" -%}
+{%- set diff_green = "#586e5f" -%}
+{%- set diff_red = "#6c495b" -%}
+{%- set diff_blue_bg = "#4a587d" -%}
+{%- set diff_blue_fg = "#5673a7" -%}
 {%- else -%}
-{%- set transparent = "000000" -%}
-{%- set diff_added_opacity = "20%" -%}
-{%- set diff_conflict_opacity = "20%" -%}
-{%- set diff_deleted_opacity = "10%" -%}
+{%- set transparent = "#000000" -%}
+{%- set diff_green = "#cce1cd" -%}
+{%- set diff_red = "#e9c4cf" -%}
+{%- set diff_blue_bg = "#c7d6f7" -%}
+{%- set diff_blue_fg = "#97b6f8" -%}
 {%- endif -%}
 
 {
@@ -62,8 +69,8 @@ whiskers:
     "button.primary.focusOutline": "Transparent",
     "button.primary.background.default": "Mauve",
     "button.primary.background.disabled": "Overlay1",
-    "button.primary.background.hovered": "{{ mauve.hex }}70%",
-    "button.primary.background.pressed": "{{ mauve.hex }}60%",
+    "button.primary.background.hovered": "{{ mauve | mod(opacity=0.8) | get(key="hex") }}",
+    "button.primary.background.pressed": "{{ mauve | mod(opacity=0.6) | get(key="hex") }}",
     "button.primary.text.default": "Crust",
     "button.primary.text.disabled": "Subtext0",
     "button.primary.text.hovered": "Crust",
@@ -77,8 +84,8 @@ whiskers:
     "button.secondary.focusOutline": "Transparent",
     "button.secondary.background.default": "Surface0",
     "button.secondary.background.disabled": "Surface0",
-    "button.secondary.background.hovered": "{{ surface0.hex }}60%",
-    "button.secondary.background.pressed": "{{ surface0.hex }}40%",
+    "button.secondary.background.hovered": "{{ surface0 | mod(opacity=0.6) | get(key="hex") }}",
+    "button.secondary.background.pressed": "{{ surface0 | mod(opacity=0.4) | get(key="hex") }}",
     "button.secondary.text.default": "Text",
     "button.secondary.text.disabled": "Surface2",
     "button.secondary.text.hovered": "Text",
@@ -91,9 +98,9 @@ whiskers:
     "button.positive.focusBorder": "Transparent",
     "button.positive.focusOutline": "Transparent",
     "button.positive.background.default": "Green",
-    "button.positive.background.disabled": "{{ green.hex }}40%",
-    "button.positive.background.hovered": "{{ green.hex }}70%",
-    "button.positive.background.pressed": "{{ green.hex }}60%",
+    "button.positive.background.disabled": "{{ green | mod(opacity=0.4) | get(key="hex") }}",
+    "button.positive.background.hovered": "{{ green | mod(opacity=0.7) | get(key="hex") }}",
+    "button.positive.background.pressed": "{{ green | mod(opacity=0.6) | get(key="hex") }}",
     "button.positive.text.default": "Crust",
     "button.positive.text.disabled": "Subtext0",
     "button.positive.text.hovered": "Crust",
@@ -106,9 +113,9 @@ whiskers:
     "button.dangerous.focusBorder": "Transparent",
     "button.dangerous.focusOutline": "Transparent",
     "button.dangerous.background.default": "Red",
-    "button.dangerous.background.disabled": "{{ red.hex }}40%",
-    "button.dangerous.background.hovered": "{{ red.hex }}70%",
-    "button.dangerous.background.pressed": "{{ red.hex }}60%",
+    "button.dangerous.background.disabled": "{{ red | mod(opacity=0.4) | get(key="hex") }}",
+    "button.dangerous.background.hovered": "{{ red | mod(opacity=0.7) | get(key="hex") }}",
+    "button.dangerous.background.pressed": "{{ red | mod(opacity=0.6) | get(key="hex") }}",
     "button.dangerous.text.default": "Crust",
     "button.dangerous.text.disabled": "Subtext0",
     "button.dangerous.text.hovered": "Crust",
@@ -122,8 +129,8 @@ whiskers:
     "button.tile.focusOutline": "Transparent",
     "button.tile.background.default": "Mantle",
     "button.tile.background.disabled": "Mantle",
-    "button.tile.background.hovered": "{{ surface0.hex }}60%",
-    "button.tile.background.pressed": "{{ surface0.hex }}40%",
+    "button.tile.background.hovered": "{{ surface0 | mod(opacity=0.6) | get(key="hex") }}",
+    "button.tile.background.pressed": "{{ surface0 | mod(opacity=0.4) | get(key="hex") }}",
     "button.tile.text.default": "Text",
     "button.tile.text.disabled": "Surface2",
     "button.tile.text.hovered": "Text",
@@ -152,8 +159,8 @@ whiskers:
     "toggleButton.on.focusBorder": "Transparent",
     "toggleButton.on.background.default": "Lavender",
     "toggleButton.on.background.disabled": "Overlay0",
-    "toggleButton.on.background.hovered": "{{ lavender.hex }}70%",
-    "toggleButton.on.background.pressed": "{{ lavender.hex }}60%",
+    "toggleButton.on.background.hovered": "{{ lavender | mod(opacity=0.7) | get(key="hex") }}",
+    "toggleButton.on.background.pressed": "{{ lavender | mod(opacity=0.6) | get(key="hex") }}",
     "toggleButton.on.text.default": "Crust",
     "toggleButton.on.text.hovered": "Crust",
     "toggleButton.on.text.pressed": "Crust",
@@ -163,8 +170,8 @@ whiskers:
     "toggleButton.off.focusBorder": "Transparent",
     "toggleButton.off.background.default": "Surface0",
     "toggleButton.off.background.disabled": "Overlay0",
-    "toggleButton.off.background.hovered": "{{ surface0.hex }}60%",
-    "toggleButton.off.background.pressed": "{{ surface0.hex }}40%",
+    "toggleButton.off.background.hovered": "{{ surface0 | mod(opacity=0.6) | get(key="hex") }}",
+    "toggleButton.off.background.pressed": "{{ surface0 | mod(opacity=0.4) | get(key="hex") }}",
     "toggleButton.off.text.default": "Text",
     "toggleButton.off.text.hovered": "Text",
     "toggleButton.off.text.pressed": "Text",
@@ -231,8 +238,8 @@ whiskers:
     "editor.text": "Text",
     "editor.caret.background": "Text",
     "editor.whitespace.text": "Text",
-    "editor.currentLine.background.default": "{{ overlay0.hex }}10%",
-    "editor.currentLine.background.focused": "{{ overlay0.hex }}10%",
+    "editor.currentLine.background.default": "{{ overlay0 | mod(opacity=0.1) | get(key="hex") }}",
+    "editor.currentLine.background.focused": "{{ overlay0 | mod(opacity=0.1) | get(key="hex") }}",
     "editor.lineNumber.current": "Mauve",
     "editor.lineNumber.default": "Overlay0",
     "editor.gitDiff.background.added": "Green",
@@ -272,10 +279,8 @@ whiskers:
     "completion.match.background": "Transparent",
     "completion.match.text": "Flamingo",
 
-    "search.match.background": "{{ yellow.hex }}80%",
+    "search.match.background": "{{ yellow | mod(opacity=0.8) | get(key="hex") }}",
     "search.match.text": "Crust",
-
-    "dnd": "{{ transparent }}20%",
 
     "icon.background.blue": "Blue",
     "icon.background.green": "Green",
@@ -328,10 +333,10 @@ whiskers:
     "progressBar.indeterminate.foreground": "Pink",
     "progressBar.indeterminate.foregroundAccent": "Mauve",
 
-    "scrollbar.thumb.default": "{{ transparent }}20%",
-    "scrollbar.thumb.hovered": "{{ transparent }}40%",
+    "scrollbar.thumb.default": "{{ transparent }}33", {#- 33 alpha -> 20% opacity #}
+    "scrollbar.thumb.hovered": "{{ transparent }}66", {#- 66 alpha -> 40% opacity #}
     "scrollbar.track.default": "Transparent",
-    "scrollbar.track.hovered": "{{ transparent }}20%",
+    "scrollbar.track.hovered": "{{ transparent }}33", {#- 33 alpha -> 20% opacity #}
 
     "tab.background.default": "Mantle",
     "tab.background.selected": "Surface0",
@@ -407,10 +412,10 @@ whiskers:
 
     "settings.modified.indicator": "Yellow",
 
-    "dragAndDrop.background": "{{ transparent }}10%",
+    "dragAndDrop.background": "{{ transparent }}1A", {#- 1A alpha -> 10% opacity #}
 
     "problemsWidget.checkmark.foreground": "Green",
-    "problemsWidget.checkmark.background": "{{ green.hex }}30%",
+    "problemsWidget.checkmark.background": "{{ green | mod(opacity=0.3) | get(key="hex") }}",
     "problemsWidget.status.expanded.background.error": "{{ red | mod(lightness=40) | get(key="hex") }}",
     "problemsWidget.status.expanded.background.warning": "{{ yellow | mod(lightness=45) | get(key="hex") }}",
     {% if flavor.dark -%}
@@ -423,10 +428,10 @@ whiskers:
     "problemsWidget.status.expanded.border.weakWarning": "{{ yellow | mod(lightness=50) | get(key="hex") }}",
 
     "gitBranchTag.local.text": "Text",
-    "gitBranchTag.local.background": "{{ blue.hex }}10%",
+    "gitBranchTag.local.background": "{{ blue | mod(opacity=0.1) | get(key="hex") }}",
     "gitBranchTag.local.border": "Blue",
     "gitBranchTag.remote.text": "Text",
-    "gitBranchTag.remote.background": "{{ mauve.hex }}10%",
+    "gitBranchTag.remote.background": "{{ mauve | mod(opacity=0.1) | get(key="hex") }}",
     "gitBranchTag.remote.border": "Mauve",
 
     "remoteWorkspaceStatusLabel.background.ssh": "Green",
@@ -438,16 +443,16 @@ whiskers:
     "remoteWorkspaceStatusLabel.text.docker": "Crust",
     "remoteWorkspaceStatusLabel.text.space": "Crust",
 
-    "remote.userColor.background.one": "{{ rosewater.hex }}70%",
-    "remote.userColor.background.two": "{{ pink.hex }}70%",
-    "remote.userColor.background.three": "{{ lavender.hex }}70%",
-    "remote.userColor.background.four": "{{ mauve.hex }}70%",
-    "remote.userColor.background.five": "{{ maroon.hex }}70%",
-    "remote.userColor.background.six": "{{ peach.hex }}70%",
-    "remote.userColor.background.seven": "{{ yellow.hex }}70%",
-    "remote.userColor.background.eight": "{{ green.hex }}70%",
-    "remote.userColor.background.nine": "{{ teal.hex }}70%",
-    "remote.userColor.background.ten": "{{ blue.hex }}70%",
+    "remote.userColor.background.one": "{{ rosewater | mod(opacity=0.7) | get(key="hex") }}",
+    "remote.userColor.background.two": "{{ pink | mod(opacity=0.7) | get(key="hex") }}",
+    "remote.userColor.background.three": "{{ lavender | mod(opacity=0.7) | get(key="hex") }}",
+    "remote.userColor.background.four": "{{ mauve | mod(opacity=0.7) | get(key="hex") }}",
+    "remote.userColor.background.five": "{{ maroon | mod(opacity=0.7) | get(key="hex") }}",
+    "remote.userColor.background.six": "{{ peach | mod(opacity=0.7) | get(key="hex") }}",
+    "remote.userColor.background.seven": "{{ yellow | mod(opacity=0.7) | get(key="hex") }}",
+    "remote.userColor.background.eight": "{{ green | mod(opacity=0.7) | get(key="hex") }}",
+    "remote.userColor.background.nine": "{{ teal | mod(opacity=0.7) | get(key="hex") }}",
+    "remote.userColor.background.ten": "{{ blue | mod(opacity=0.7) | get(key="hex") }}",
 
     "ai.inputField.background.default": "Mantle",
     "ai.inputField.border.default": "Transparent",
@@ -462,8 +467,8 @@ whiskers:
     "ai.button.default.focusOutline": "Transparent",
     "ai.button.default.background.default": "Surface0",
     "ai.button.default.background.disabled": "Surface0",
-    "ai.button.default.background.hovered": "{{ surface0.hex }}60%",
-    "ai.button.default.background.pressed": "{{ surface0.hex }}40%",
+    "ai.button.default.background.hovered": "{{ surface0 | mod(opacity=0.6) | get(key="hex") }}",
+    "ai.button.default.background.pressed": "{{ surface0 | mod(opacity=0.4) | get(key="hex") }}",
     "ai.button.default.text.default": "Text",
     "ai.button.default.text.disabled": "Surface2",
     "ai.button.default.text.hovered": "Text",
@@ -477,8 +482,8 @@ whiskers:
     "ai.button.recipe.focusOutline": "Transparent",
     "ai.button.recipe.background.default": "Surface0",
     "ai.button.recipe.background.disabled": "Surface0",
-    "ai.button.recipe.background.hovered": "{{ surface0.hex }}60%",
-    "ai.button.recipe.background.pressed": "{{ surface0.hex }}40%",
+    "ai.button.recipe.background.hovered": "{{ surface0 | mod(opacity=0.6) | get(key="hex") }}",
+    "ai.button.recipe.background.pressed": "{{ surface0 | mod(opacity=0.4) | get(key="hex") }}",
     "ai.button.recipe.text.default": "Text",
     "ai.button.recipe.text.disabled": "Surface2",
     "ai.button.recipe.text.hovered": "Text",
@@ -490,11 +495,11 @@ whiskers:
 
     "ai.icon.text": "Mauve",
     "ai.icon.background": "Mauve",
-    "ai.icon.background.secondary": "{{ mauve.hex }}20%",
+    "ai.icon.background.secondary": "{{ mauve | mod(opacity=0.2) | get(key="hex") }}",
 
     "ai.user.icon.text": "Blue",
     "ai.user.icon.background": "Blue",
-    "ai.user.icon.background.secondary": "{{ blue.hex }}20%",
+    "ai.user.icon.background.secondary": "{{ blue | mod(opacity=0.2) | get(key="hex") }}",
 
     "ai.error.border": "Red",
     "ai.error.fill": "Transparent"
@@ -528,62 +533,64 @@ whiskers:
       "backgroundColor": "Blue"
     },
     "diff.added": {
-      "backgroundColor": "{{ green.hex }}{{ diff_added_opacity }}",
-      "stripeColor": "{{ green.hex }}{{ diff_added_opacity }}"
-    },
-    "diff.added.empty": {
-      "backgroundColor": "{{ green.hex }}{{ diff_added_opacity }}",
-      "showEmptyIntervals": true
-    },
-    "diff.added.withBorder": {
-      "backgroundColor": "{{ green.hex }}{{ diff_added_opacity }}",
-      "decoration": {
-        "color": "{{ green.hex }}{{ diff_added_opacity }}",
-        "style": "BORDER"
-      }
+      "backgroundColor": "{{ diff_green }}"
     },
     "diff.added.word": {
-      "backgroundColor": "{{ green.hex }}{{ diff_added_opacity }}"
+      "backgroundColor": "{{ diff_green }}"
     },
-    "diff.conflict.withBorder": {
-      "backgroundColor": "{{ red.hex }}{{ diff_conflict_opacity }}",
-      "decoration": {
-        "color": "Red",
-        "style": "BORDER"
+    "diff.added.withBorder": {
+      "backgroundColor": "{{ diff_green }}",
+      "border": {
+        "color": "Green"
       }
+    },
+    "diff.added.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "Green"
+      }
+    },
+    "diff.added.empty": {
+      "backgroundColor": "{{ diff_green }}"
     },
     "diff.deleted": {
-      "backgroundColor": "{{ red.hex }}{{ diff_deleted_opacity }}",
-      "stripeColor": "{{ red.hex }}{{ diff_deleted_opacity }}"
-    },
-    "diff.deleted.empty": {
-      "backgroundColor": "{{ red.hex }}{{ diff_deleted_opacity }}",
-      "showEmptyIntervals": true
-    },
-    "diff.deleted.withBorder": {
-      "backgroundColor": "{{ red.hex }}{{ diff_deleted_opacity }}",
-      "decoration": {
-        "color": "{{ red.hex }}{{ diff_deleted_opacity }}",
-        "style": "BORDER"
-      }
+      "backgroundColor": "{{ diff_red }}"
     },
     "diff.deleted.word": {
-      "backgroundColor": "{{ red.hex }}{{ diff_deleted_opacity }}",
-      "showEmptyIntervals": true
+      "backgroundColor": "{{ diff_red }}"
     },
-    "diff.modified": {
-      "backgroundColor": "{{ blue.hex }}{{ diff_deleted_opacity }}",
-      "stripeColor": "{{ blue.hex }}{{ diff_deleted_opacity }}"
-    },
-    "diff.modified.withBorder": {
-      "backgroundColor": "{{ blue.hex }}{{ diff_deleted_opacity }}",
-      "decoration": {
-        "color": "{{ blue.hex }}{{ diff_deleted_opacity }}",
-        "style": "BORDER"
+    "diff.deleted.withBorder": {
+      "backgroundColor": "{{ diff_red }}",
+      "border": {
+        "color": "Red"
       }
     },
+    "diff.deleted.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "Red"
+      }
+    },
+    "diff.deleted.empty": {
+      "backgroundColor": "{{ diff_red }}"
+    },
+    "diff.modified": {
+      "backgroundColor": "{{ diff_blue_bg }}"
+    },
     "diff.modified.word": {
-      "backgroundColor": "{{ blue.hex }}{{ diff_deleted_opacity }}"
+      "backgroundColor": "{{ diff_blue_fg }}"
+    },
+    "diff.modified.withBorder": {
+      "backgroundColor": "{{ diff_blue_bg }}",
+      "border": {
+        "color": "Blue"
+      }
+    },
+    "diff.modified.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "Blue"
+      }
     },
     "editor.brace.match": {
       "backgroundColor": "Surface1"
@@ -601,7 +608,7 @@ whiskers:
       "stripeColor": "Surface0"
     },
     "editor.search.results": {
-      "backgroundColor": "{{ blue.hex }}40%",
+      "backgroundColor": "{{ blue | mod(opacity=0.4) | get(key="hex") }}",
       "stripeColor": "Blue"
     },
     {#- No qualifier refers to unfocused #}
@@ -847,10 +854,10 @@ whiskers:
     },
     "problem.info": {
       "decoration": {
-        "color": "{{ teal.hex }}40%",
+        "color": "{{ teal | mod(opacity=0.4) | get(key="hex") }}",
         "style": "BORDER"
       },
-      "stripeColor": "{{ teal.hex }}40%"
+      "stripeColor": "{{ teal | mod(opacity=0.4) | get(key="hex") }}"
     },
     "problem.unknown": {},
     "problem.unused": {
@@ -865,10 +872,10 @@ whiskers:
     },
     "problem.warning.weak": {
       "decoration": {
-        "color": "{{ yellow.hex }}40%",
+        "color": "{{ yellow | mod(opacity=0.4) | get(key="hex") }}",
         "thickness": 2.0
       },
-      "stripeColor": "{{ yellow.hex }}40%"
+      "stripeColor": "{{ yellow | mod(opacity=0.4) | get(key="hex") }}"
     },
     "propertyName.css": {
       "foregroundColor": "Blue"
@@ -904,9 +911,14 @@ whiskers:
       "foregroundColor": "Mauve"
     },
     "snippet": {
-      "backgroundColor": "Blue",
-      "borderRadius": 4.0,
-      "showEmptyIntervals": true
+      "border": {
+       "color": "Surface1"
+      }
+    },
+    "snippet.selected": {
+      "border": {
+        "color": "Blue"
+      }
     },
     "string": {
       "foregroundColor": "Green"
@@ -953,6 +965,6 @@ whiskers:
 {%- for _, color in flavor.colors %}
     "{{ color.identifier | capitalize }}": "{{ color.hex }}",
 {%- endfor %}
-    "Transparent": "ffffff0%"
+    "Transparent": "#ffffff00"
   }
 }
