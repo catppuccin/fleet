@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/catppuccin/fleet/compare/v1.0.1...v1.1.0) (2024-08-15)
+
+
+### Features
+
+* improve git diff colouring ([db062e1](https://github.com/catppuccin/fleet/commit/db062e16dba7f22fc03a0a46a7e64d4217c53c62))
+
+
+### Bug Fixes
+
+* switch from deprecated opacity specifier to #RGBA ([#40](https://github.com/catppuccin/fleet/issues/40)) ([db062e1](https://github.com/catppuccin/fleet/commit/db062e16dba7f22fc03a0a46a7e64d4217c53c62))
+
 ## [1.0.1](https://github.com/catppuccin/fleet/compare/v1.0.0...v1.0.1) (2024-08-11)
 
 
