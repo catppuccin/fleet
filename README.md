@@ -41,8 +41,11 @@
 3. Select your desired theme! (`⚙`️→ `Themes`)
 
 > [!IMPORTANT]  
-> You cannot have any files in your `~/.fleet/theme` folder named `catppuccin-*.json`
+> You cannot have any files in your Fleet themes folder named `catppuccin-*.json`
 > (where * stands for any string of characters) or the plugin will fail to load.
+>
+> You can find the appropriate path to the folder depending on your system
+> [here](https://www.jetbrains.com/help/fleet/color-themes.html#location)
 
 ## Contributing
 
