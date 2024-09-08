@@ -1,7 +1,7 @@
 ---
 accent: mauve
 whiskers:
-  version: 2.4.0
+  version: 2.5.0
   hex_format: "#{{r}}{{g}}{{b}}{{z}}"
   matrix:
     - flavor
