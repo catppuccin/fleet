@@ -493,7 +493,7 @@
       "foregroundColor": "Yellow"
     },
     "debug.currentFrame": {
-      "backgroundColor": "Blue"
+      "backgroundColor": "#eed49f26"
     },
     "diff.added": {
       "backgroundColor": "#586e5f"
