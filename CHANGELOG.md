@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/catppuccin/fleet/compare/v1.1.0...v1.1.1) (2024-09-15)
+
+
+### Bug Fixes
+
+* Update debugging current line colour to make it more redable ([90aac03](https://github.com/catppuccin/fleet/commit/90aac03ac39a7ebaaec845f59d7b40bbbb97f9bb))
+
 ## [1.1.0](https://github.com/catppuccin/fleet/compare/v1.0.1...v1.1.0) (2024-08-15)
 
 
