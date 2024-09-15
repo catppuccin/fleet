@@ -530,7 +530,7 @@ and set them without the transparency value.
       "foregroundColor": "Yellow"
     },
     "debug.currentFrame": {
-      "backgroundColor": "Blue"
+      "backgroundColor": "{{ yellow | mod(opacity=0.15) | get(key="hex") }}"
     },
     "diff.added": {
       "backgroundColor": "{{ diff_green }}"
