@@ -14,7 +14,7 @@ jobs:
       - name: Setup Whiskers
         uses: catppuccin/setup-whiskers@v1
         with:
-          whiskers-version: 2.5.0
+          whiskers-version: 2.5.1
 
       - name: Check themes are updated
         run: |
