@@ -11,23 +11,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Extract whiskers version from tera file
-        run: |
-          WHISKERS_VERSION=$(sed -nr 's/^\s*version: (.+)/\1/p' fleet.tera)
-
-          if [ -z "${WHISKERS_VERSION}" ]; then
-            echo "Failed to extract whiskers version from 'fleet.tera'"
-            exit 1
-          fi
-
-          echo "Detected whiskers version is '$WHISKERS_VERSION'"
-          echo "WHISKERS_VERSION=v${WHISKERS_VERSION}" >> $GITHUB_ENV
-
-      - name: Fetch whiskers ${{ env.WHISKERS_VERSION }}
-        run: |
-          curl -LsSf "https://github.com/catppuccin/whiskers/releases/download/${WHISKERS_VERSION}/whiskers-x86_64-unknown-linux-gnu" > whiskers
-          chmod +x whiskers
+      - name: Setup Whiskers
+        uses: catppuccin/setup-whiskers@v1
+        with:
+          whiskers-version: 2.5.0
 
       - name: Check themes are updated
         run: |
-          ./whiskers --check themes/ fleet.tera
+          whiskers --check themes/ fleet.tera
