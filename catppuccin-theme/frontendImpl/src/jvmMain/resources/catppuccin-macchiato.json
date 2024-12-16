@@ -10,12 +10,10 @@
 
     "shadow.border": "Mantle",
 
-    "background.default": "Base",
-    "background.primary": "Base",
+    "island.background": "Base",
+
+    "background.primary": "Mantle",
     "background.secondary": "Mantle",
-    "background.disabled": "Transparent",
-    "background.dimmed": "Transparent",
-    "background.error": "Red",
     "background.hovered": "Surface1",
     "background.selected": "Surface2",
 
@@ -25,9 +23,7 @@
     "text.default": "Text",
     "text.primary": "Text",
     "text.secondary": "Surface2",
-    "text.dimmed": "Surface2",
     "text.disabled": "Surface1",
-    "text.success": "Green",
 
     "button.background.default": "Surface0",
     "button.background.hovered": "Surface1",
@@ -117,16 +113,12 @@
     "checkbox.focusOutline": "Transparent",
     "checkbox.on.background.default": "Transparent",
     "checkbox.on.background.hovered": "Transparent",
-    "checkbox.on.background.pressed": "Transparent",
     "checkbox.on.border.default": "Surface2",
     "checkbox.on.border.hovered": "Mauve",
-    "checkbox.on.border.pressed": "Surface2",
     "checkbox.off.background.default": "Transparent",
     "checkbox.off.background.hovered": "Transparent",
-    "checkbox.off.background.pressed": "Transparent",
     "checkbox.off.border.default": "Surface2",
     "checkbox.off.border.hovered": "Mauve",
-    "checkbox.off.border.pressed": "Surface2",
 
     "toggleButton.on.focusBorder": "Transparent",
     "toggleButton.on.background.default": "Lavender",
@@ -206,7 +198,6 @@
     "pillButton.border.hovered": "Transparent",
     "pillButton.border.pressed": "Transparent",
 
-    "editor.background": "Base",
     "editor.text": "Text",
     "editor.caret.background": "Text",
     "editor.whitespace.text": "Text",
@@ -222,25 +213,19 @@
     "editor.gitDiff.text.deleted": "Red",
     "editor.gitDiff.background.modified": "Blue",
     "editor.gitDiff.text.modified": "Blue",
-    "editor.interline.block.background": "Mantle",
-    "editor.interline.listItem.text.default": "Text",
-    "editor.interline.listItem.text.hovered": "Text",
-    "editor.interline.listItem.text.focused": "Text",
-    "editor.interline.listItem.text.selected": "Text",
-    "editor.interline.listItem.text.secondary": "Surface2",
-    "editor.interline.listItem.border.default": "Transparent",
-    "editor.interline.listItem.border.hovered": "Transparent",
-    "editor.interline.listItem.border.focused": "Transparent",
-    "editor.interline.listItem.border.selected": "Transparent",
-    "editor.interline.listItem.background.default": "Transparent",
-    "editor.interline.listItem.background.hovered": "Base",
-    "editor.interline.listItem.background.focused": "Base",
-    "editor.interline.listItem.background.selected": "Base",
     "editor.foldedMark.background": "Mantle",
     "editor.foldedMark.text": "Text",
     "editor.foldIndicator.icon.default": "Overlay0",
     "editor.foldIndicator.icon.hovered": "Mauve",
     "editor.foldIndicator.background.hovered": "Mantle",
+
+    "editor.interline.background": "Mantle",
+    "editor.interline.match.background": "#eed49fcc",
+    "editor.interline.match.background.secondary": "#eed49fcc",
+    "editor.interline.match.text": "Crust",
+    "editor.interline.match.text.secondary": "Crust",
+    "editor.interline.preview.background": "Base",
+    "editor.interline.preview.border": "Transparent",
 
     "separator.default": "Surface0",
     "separator.hovered": "Blue",
@@ -256,43 +241,30 @@
 
     "icon.background.blue": "Blue",
     "icon.background.green": "Green",
-    "icon.background.orange": "Peach",
     "icon.background.red": "Red",
     "icon.background.cyan": "Sapphire",
 
-    "inputField.background.default": "Mantle",
+    "inputField.background.default": "Transparent",
     "inputField.background.disabled": "Transparent",
     "inputField.background.error": "Mantle",
+    "inputField.background.hovered": "Transparent",
     "inputField.text.disabled": "Mantle",
     "inputField.border.error": "Red",
+    "inputField.border.default": "Surface0",
     "inputField.border.disabled": "Mantle",
+    "inputField.border.hovered": "Surface1",
     "inputField.selectionBackground.default": "Surface0",
     "inputField.focusOutline.default": "Transparent",
     "inputField.focusOutline.error": "Transparent",
     "inputField.focusBorder.default": "Mauve",
     "inputField.focusBorder.error": "Red",
 
+    "highlight.resize.border.center.hovered": "Mauve",
+    "highlight.resize.border.center.pressed": "Mauve",
+
     "popup.background": "Mantle",
     "popup.editor.background": "Base",
-    "popup.tab.background.default": "Transparent",
-    "popup.tab.background.hovered": "Base",
-    "popup.tab.background.selected": "Base",
-    "popup.tab.indicator": "Mauve",
-    "popup.tab.text": "Text",
-    "popup.tabPanel.background": "Mantle",
-    "popup.listItem.text.default": "Text",
-    "popup.listItem.text.hovered": "Text",
-    "popup.listItem.text.focused": "Text",
-    "popup.listItem.text.selected": "Text",
-    "popup.listItem.text.secondary": "Surface2",
-    "popup.listItem.border.default": "Transparent",
-    "popup.listItem.border.hovered": "Transparent",
-    "popup.listItem.border.focused": "Transparent",
-    "popup.listItem.border.selected": "Transparent",
-    "popup.listItem.background.default": "Transparent",
-    "popup.listItem.background.hovered": "Transparent",
-    "popup.listItem.background.focused": "Base",
-    "popup.listItem.background.selected": "Base",
+    "popup.goto.background": "Mantle",
 
     "notification.background.default": "Base",
     "notification.background.unread": "Surface0",
@@ -310,12 +282,12 @@
     "scrollbar.track.default": "Transparent",
     "scrollbar.track.hovered": "#ffffff33",
 
-    "tab.background.default": "Mantle",
+    "tab.background.default": "Transparent",
     "tab.background.selected": "Surface0",
     "tab.background.hovered": "Surface0",
+    "tab.background.selectedFocused": "Surface0",
+    "tab.border.selectedFocused": "Mauve",
     "tab.text": "Text",
-    "tab.indicator": "Mauve",
-    "tabPanel.background": "Mantle",
     "terminal.ansiColors.background.ansiBlack": "Text",
     "terminal.ansiColors.foreground.ansiBlack": "Text",
     "terminal.ansiColors.background.ansiBlue": "Blue",
@@ -349,12 +321,9 @@
     "terminal.ansiColors.background.ansiYellow": "Yellow",
     "terminal.ansiColors.foreground.ansiYellow": "Yellow",
 
-    "tool.background": "Base",
-    "mainToolbar.background": "Mantle",
-    "statusBar.background": "Mantle",
-
     "tooltip.background": "Base",
     "tooltip.border": "Transparent",
+    "tooltip.text.primary": "Text",
 
     "tree.focusBorder": "Mauve",
 
@@ -367,10 +336,10 @@
     "listItem.border.hovered": "Transparent",
     "listItem.border.focused": "Transparent",
     "listItem.border.selected": "Transparent",
-    "listItem.background.default": "Base",
-    "listItem.background.hovered": "Mantle",
-    "listItem.background.focused": "Mantle",
-    "listItem.background.selected": "Mantle",
+    "listItem.background.default": "Transparent",
+    "listItem.background.hovered": "DarkTint",
+    "listItem.background.focused": "DarkTint",
+    "listItem.background.selected": "DarkTint",
 
     "smartMode.enabled.fill": "Sky",
     "smartMode.loader.border": "Sky",
@@ -417,46 +386,10 @@
     "remote.userColor.background.nine": "#8bd5cab3",
     "remote.userColor.background.ten": "#8aadf4b3",
 
-    "ai.inputField.background.default": "Mantle",
-    "ai.inputField.border.default": "Transparent",
-    "ai.inputField.focusOutline.default": "Transparent",
-    "ai.inputField.focusBorder.default": "Mauve",
-
     "ai.snippet.border": "Transparent",
     "ai.snippet.header.background": "Crust",
     "ai.snippet.editor.background": "Mantle",
 
-    "ai.button.default.focusBorder": "Transparent",
-    "ai.button.default.focusOutline": "Transparent",
-    "ai.button.default.background.default": "Surface0",
-    "ai.button.default.background.disabled": "Surface0",
-    "ai.button.default.background.hovered": "#363a4f99",
-    "ai.button.default.background.pressed": "#363a4f66",
-    "ai.button.default.text.default": "Text",
-    "ai.button.default.text.disabled": "Surface2",
-    "ai.button.default.text.hovered": "Text",
-    "ai.button.default.text.pressed": "Text",
-    "ai.button.default.border.default": "Transparent",
-    "ai.button.default.border.disabled": "Transparent",
-    "ai.button.default.border.hovered": "Transparent",
-    "ai.button.default.border.pressed": "Transparent",
-
-    "ai.button.recipe.focusBorder": "Transparent",
-    "ai.button.recipe.focusOutline": "Transparent",
-    "ai.button.recipe.background.default": "Surface0",
-    "ai.button.recipe.background.disabled": "Surface0",
-    "ai.button.recipe.background.hovered": "#363a4f99",
-    "ai.button.recipe.background.pressed": "#363a4f66",
-    "ai.button.recipe.text.default": "Text",
-    "ai.button.recipe.text.disabled": "Surface2",
-    "ai.button.recipe.text.hovered": "Text",
-    "ai.button.recipe.text.pressed": "Text",
-    "ai.button.recipe.border.default": "Transparent",
-    "ai.button.recipe.border.disabled": "Transparent",
-    "ai.button.recipe.border.hovered": "Transparent",
-    "ai.button.recipe.border.pressed": "Transparent",
-
-    "ai.icon.text": "Mauve",
     "ai.icon.background": "Mauve",
     "ai.icon.background.secondary": "#c6a0f633",
 
@@ -464,8 +397,7 @@
     "ai.user.icon.background": "Blue",
     "ai.user.icon.background.secondary": "#8aadf433",
 
-    "ai.error.border": "Red",
-    "ai.error.fill": "Transparent"
+    "ai.error.border": "Red"
   },
   "textAttributes": {
     "attributeName.html": {
@@ -915,6 +847,13 @@
     "tagName.html": {
       "foregroundColor": "Mauve"
     },
+    "target.match": {
+      "backgroundColor": "#6e738d1a"
+    },
+    "target.match.word": {
+      "foregroundColor": "Crust",
+      "backgroundColor": "#eed49fcc"
+    },
     "transparent": {},
     "url.css": {
       "foregroundColor": "Green"
@@ -950,6 +889,9 @@
     "Base": "#24273a",
     "Mantle": "#1e2030",
     "Crust": "#181926",
-    "Transparent": "#ffffff00"
+    "Transparent": "#ffffff00",
+    "DarkTint": "#18191B4D",
+    "MidTint": "#18191B0D",
+    "LightTint": "#E0E1E40D"
   }
 }
