@@ -912,6 +912,6 @@ and set them without the transparency value.
 {%- for _, color in flavor.colors %}
     "{{ color.identifier | capitalize }}": "{{ color.hex }}",
 {%- endfor %}
-    "Transparent": "#ffffff00",
+    "Transparent": "#ffffff00"
   }
 }
