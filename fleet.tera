@@ -51,7 +51,10 @@ and set them without the transparency value.
     "text.default": "Text",
     "text.primary": "Text",
     "text.secondary": "Surface2",
+    "text.tertiary": "Surface1",
     "text.disabled": "Surface1",
+    "text.bright": "Text",
+    "text.dangerous": "Red",
 
     "button.background.default": "Surface0",
     "button.background.hovered": "Surface1",
@@ -229,7 +232,7 @@ and set them without the transparency value.
     "editor.text": "Text",
     "editor.caret.background": "Text",
     "editor.whitespace.text": "Text",
-    "editor.currentLine.background.default": "{{ overlay0 | mod(opacity=0.1) | get(key="hex") }}",
+    "editor.currentLine.background.default": "{{ overlay0 | mod(opacity=0.05) | get(key="hex") }}",
     "editor.currentLine.background.focused": "{{ overlay0 | mod(opacity=0.1) | get(key="hex") }}",
     "editor.lineNumber.current": "Mauve",
     "editor.lineNumber.default": "Overlay0",
@@ -254,9 +257,6 @@ and set them without the transparency value.
     "editor.interline.match.text.secondary": "Crust",
     "editor.interline.preview.background": "Base",
     "editor.interline.preview.border": "Transparent",
-
-    "separator.default": "Surface0",
-    "separator.hovered": "Blue",
 
     "link.focusOutline": "Blue",
     "link.text": "Blue",
@@ -307,8 +307,10 @@ and set them without the transparency value.
 
     "scrollbar.thumb.default": "{{ transparent }}33", {#- 33 alpha -> 20% opacity #}
     "scrollbar.thumb.hovered": "{{ transparent }}66", {#- 66 alpha -> 40% opacity #}
+    "scrollbar.thumb.pressed": "{{ transparent }}BF", {#- BF alpha -> ~75% opacity #}
     "scrollbar.track.default": "Transparent",
-    "scrollbar.track.hovered": "{{ transparent }}33", {#- 33 alpha -> 20% opacity #}
+    "scrollbar.track.hovered": "{{ transparent }}1A", {#- 1A alpha -> 10% opacity #}
+    "scrollbar.track.pressed": "{{ transparent }}33", {#- 66 alpha -> 20% opacity #}
 
     "tab.background.default": "Transparent",
     "tab.background.selected": "Surface0",
@@ -316,6 +318,10 @@ and set them without the transparency value.
     "tab.background.selectedFocused": "Surface0",
     "tab.border.selectedFocused": "Mauve",
     "tab.text": "Text",
+    "tab.focusOutline.dragAndDrop": "Blue",
+    "tab.closeIcon.default": "{{ transparent }}33", {#- 33 alpha -> 20% opacity #}
+    "tab.closeIcon.hovered": "{{ transparent }}66", {#- 66 alpha -> 40% opacity #}
+    "tab.closeIcon.pressed": "{{ transparent }}BF", {#- BF alpha -> ~75% opacity #}
 
     {#-
     Yes, these colours is not techincally correct, as white and black will be inverted based on the theme,
@@ -355,7 +361,7 @@ and set them without the transparency value.
     "terminal.ansiColors.background.ansiYellow": "Yellow",
     "terminal.ansiColors.foreground.ansiYellow": "Yellow",
 
-    "tooltip.background": "Base",
+    "tooltip.background": "Mantle",
     "tooltip.border": "Transparent",
     "tooltip.text.primary": "Text",
 
@@ -371,17 +377,19 @@ and set them without the transparency value.
     "listItem.border.focused": "Transparent",
     "listItem.border.selected": "Transparent",
     "listItem.background.default": "Transparent",
-    "listItem.background.hovered": "DarkTint",
-    "listItem.background.focused": "DarkTint",
-    "listItem.background.selected": "DarkTint",
+    "listItem.background.hovered": "Surface0",
+    "listItem.background.focused": "Surface0",
+    "listItem.background.selected": "Surface1",
 
-    "smartMode.enabled.fill": "Sky",
-    "smartMode.loader.border": "Sky",
-    "smartMode.error.fill": "Red",
+    "smartMode.background.enabled": "Sky",
+    "smartMode.background.error": "Red",
+    "smartMode.border.loading": "Sky",
 
     "settings.modified.indicator": "Yellow",
 
-    "dragAndDrop.background": "{{ transparent }}1A", {#- 1A alpha -> 10% opacity #}
+    "dragAndDrop.background": "{{ blue | mod(opacity=0.1) | get(key="hex") }}",
+    "dragAndDrop.border.default": "{{ blue | mod(opacity=0.2) | get(key="hex") }}",
+    "dragAndDrop.border.highlight": "Blue",
 
     "problemsWidget.checkmark.foreground": "Green",
     "problemsWidget.checkmark.background": "{{ green | mod(opacity=0.3) | get(key="hex") }}",
@@ -905,8 +913,5 @@ and set them without the transparency value.
     "{{ color.identifier | capitalize }}": "{{ color.hex }}",
 {%- endfor %}
     "Transparent": "#ffffff00",
-    "DarkTint": "#18191B4D",
-    "MidTint": "#18191B0D",
-    "LightTint": "#E0E1E40D"
   }
 }

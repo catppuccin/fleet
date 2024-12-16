@@ -23,7 +23,10 @@
     "text.default": "Text",
     "text.primary": "Text",
     "text.secondary": "Surface2",
+    "text.tertiary": "Surface1",
     "text.disabled": "Surface1",
+    "text.bright": "Text",
+    "text.dangerous": "Red",
 
     "button.background.default": "Surface0",
     "button.background.hovered": "Surface1",
@@ -201,7 +204,7 @@
     "editor.text": "Text",
     "editor.caret.background": "Text",
     "editor.whitespace.text": "Text",
-    "editor.currentLine.background.default": "#7379941a",
+    "editor.currentLine.background.default": "#7379940d",
     "editor.currentLine.background.focused": "#7379941a",
     "editor.lineNumber.current": "Mauve",
     "editor.lineNumber.default": "Overlay0",
@@ -226,9 +229,6 @@
     "editor.interline.match.text.secondary": "Crust",
     "editor.interline.preview.background": "Base",
     "editor.interline.preview.border": "Transparent",
-
-    "separator.default": "Surface0",
-    "separator.hovered": "Blue",
 
     "link.focusOutline": "Blue",
     "link.text": "Blue",
@@ -279,8 +279,10 @@
 
     "scrollbar.thumb.default": "#ffffff33",
     "scrollbar.thumb.hovered": "#ffffff66",
+    "scrollbar.thumb.pressed": "#ffffffBF",
     "scrollbar.track.default": "Transparent",
-    "scrollbar.track.hovered": "#ffffff33",
+    "scrollbar.track.hovered": "#ffffff1A",
+    "scrollbar.track.pressed": "#ffffff33",
 
     "tab.background.default": "Transparent",
     "tab.background.selected": "Surface0",
@@ -288,6 +290,10 @@
     "tab.background.selectedFocused": "Surface0",
     "tab.border.selectedFocused": "Mauve",
     "tab.text": "Text",
+    "tab.focusOutline.dragAndDrop": "Blue",
+    "tab.closeIcon.default": "#ffffff33",
+    "tab.closeIcon.hovered": "#ffffff66",
+    "tab.closeIcon.pressed": "#ffffffBF",
     "terminal.ansiColors.background.ansiBlack": "Text",
     "terminal.ansiColors.foreground.ansiBlack": "Text",
     "terminal.ansiColors.background.ansiBlue": "Blue",
@@ -321,7 +327,7 @@
     "terminal.ansiColors.background.ansiYellow": "Yellow",
     "terminal.ansiColors.foreground.ansiYellow": "Yellow",
 
-    "tooltip.background": "Base",
+    "tooltip.background": "Mantle",
     "tooltip.border": "Transparent",
     "tooltip.text.primary": "Text",
 
@@ -337,17 +343,19 @@
     "listItem.border.focused": "Transparent",
     "listItem.border.selected": "Transparent",
     "listItem.background.default": "Transparent",
-    "listItem.background.hovered": "DarkTint",
-    "listItem.background.focused": "DarkTint",
-    "listItem.background.selected": "DarkTint",
+    "listItem.background.hovered": "Surface0",
+    "listItem.background.focused": "Surface0",
+    "listItem.background.selected": "Surface1",
 
-    "smartMode.enabled.fill": "Sky",
-    "smartMode.loader.border": "Sky",
-    "smartMode.error.fill": "Red",
+    "smartMode.background.enabled": "Sky",
+    "smartMode.background.error": "Red",
+    "smartMode.border.loading": "Sky",
 
     "settings.modified.indicator": "Yellow",
 
-    "dragAndDrop.background": "#ffffff1A",
+    "dragAndDrop.background": "#8caaee1a",
+    "dragAndDrop.border.default": "#8caaee33",
+    "dragAndDrop.border.highlight": "Blue",
 
     "problemsWidget.checkmark.foreground": "Green",
     "problemsWidget.checkmark.background": "#a6d1894d",
@@ -890,8 +898,5 @@
     "Mantle": "#292c3c",
     "Crust": "#232634",
     "Transparent": "#ffffff00",
-    "DarkTint": "#18191B4D",
-    "MidTint": "#18191B0D",
-    "LightTint": "#E0E1E40D"
   }
 }
