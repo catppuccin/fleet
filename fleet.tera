@@ -390,9 +390,9 @@ and set them without the transparency value.
     "tree.compactFolder.selector.focused": "Text",
     "tree.compactFolder.separator": "Surface2",
 
-    "smartMode.background.enabled": "Sky",
+    "smartMode.background.enabled": "Mauve",
     "smartMode.background.error": "Red",
-    "smartMode.border.loading": "Sky",
+    "smartMode.border.loading": "Mauve",
 
     "settings.modified.indicator": "Yellow",
 
