@@ -313,15 +313,19 @@ and set them without the transparency value.
     "scrollbar.track.pressed": "{{ transparent }}33", {#- 66 alpha -> 20% opacity #}
 
     "tab.background.default": "Transparent",
-    "tab.background.selected": "Surface0",
-    "tab.background.hovered": "Surface0",
-    "tab.background.selectedFocused": "Surface0",
+    "tab.background.selected": "{{ transparent }}0D", {#- 0D alpha -> 5% opacity #}
+    "tab.background.hovered": "{{ transparent }}0D", {#- 0D alpha -> 5% opacity #}
+    "tab.background.selectedFocused": "{{ mauve | mod(opacity=0.2) | get(key="hex") }}",
+    "tab.boder.default": "Transparent",
+    "tab.boder.hovered": "Transparent",
+    "tab.boder.selected": "Transparent",
     "tab.border.selectedFocused": "Mauve",
+    "tab.border.dragAndDrop": "Mauve",
+    "tab.focusOutline.dragAndDrop": "Mauve",
     "tab.text": "Text",
-    "tab.focusOutline.dragAndDrop": "Blue",
     "tab.closeIcon.default": "{{ transparent }}33", {#- 33 alpha -> 20% opacity #}
-    "tab.closeIcon.hovered": "{{ transparent }}66", {#- 66 alpha -> 40% opacity #}
-    "tab.closeIcon.pressed": "{{ transparent }}BF", {#- BF alpha -> ~75% opacity #}
+    "tab.closeIcon.hovered": "{{ transparent }}AF", {#- AF alpha -> ~70% opacity #}
+    "tab.closeIcon.pressed": "{{ transparent }}66", {#- 66 alpha -> 40% opacity #}
 
     {#-
     Yes, these colours is not techincally correct, as white and black will be inverted based on the theme,
@@ -379,7 +383,12 @@ and set them without the transparency value.
     "listItem.background.default": "Transparent",
     "listItem.background.hovered": "Surface0",
     "listItem.background.focused": "Surface0",
-    "listItem.background.selected": "Surface1",
+    "listItem.background.selected": "Surface0",
+    "listItem.background.dnd": "Surface0",
+
+    "tree.compactFolder.selector.default": "Text",
+    "tree.compactFolder.selector.focused": "Text",
+    "tree.compactFolder.separator": "Surface2",
 
     "smartMode.background.enabled": "Sky",
     "smartMode.background.error": "Red",
@@ -387,9 +396,9 @@ and set them without the transparency value.
 
     "settings.modified.indicator": "Yellow",
 
-    "dragAndDrop.background": "{{ blue | mod(opacity=0.1) | get(key="hex") }}",
-    "dragAndDrop.border.default": "{{ blue | mod(opacity=0.2) | get(key="hex") }}",
-    "dragAndDrop.border.highlight": "Blue",
+    "dragAndDrop.background": "{{ mauve | mod(opacity=0.1) | get(key="hex") }}",
+    "dragAndDrop.border.default": "{{ mauve | mod(opacity=0.2) | get(key="hex") }}",
+    "dragAndDrop.border.highlight": "Mauve",
 
     "problemsWidget.checkmark.foreground": "Green",
     "problemsWidget.checkmark.background": "{{ green | mod(opacity=0.3) | get(key="hex") }}",
