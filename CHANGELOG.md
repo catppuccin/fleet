@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/catppuccin/fleet/compare/v1.1.1...v1.2.0) (2024-12-18)
+
+
+### Features
+
+* update themes to Fleet 1.44 ([#63](https://github.com/catppuccin/fleet/issues/63)) ([184125c](https://github.com/catppuccin/fleet/commit/184125c3eeaa4d977f13edccc95efc6ae654e29d))
+
 ## [1.1.1](https://github.com/catppuccin/fleet/compare/v1.1.0...v1.1.1) (2024-09-15)
 
 
