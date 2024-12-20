@@ -57,7 +57,7 @@ for theme_path in $(find "$CATPPUCCIN_THEMES_DIR" -type f); do
     cwebp -q 100 -o "$OUTPUT_DIR/$output_file" "$png_path" &> /dev/null
 done
 
-catwalk -C assets/
+catwalk --layout stacked --directory assets/
 
 # Cleanup
 kill "$pid"
