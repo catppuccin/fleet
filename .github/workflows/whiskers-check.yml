@@ -12,9 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Whiskers
-        uses: catppuccin/setup-whiskers@v1
-        with:
-          whiskers-version: 2.5.1
+        uses: catppuccin/setup-whiskers@v2
 
       - name: Check themes are updated
         run: |
