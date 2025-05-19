@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.fleet.plugin)
 }
 
-version = "1.2.0" // x-release-please-version
+version = "1.2.1" // x-release-please-version
 
 fleetPlugin {
     id = "com.github.catppuccin.fleet"
