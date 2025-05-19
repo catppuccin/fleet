@@ -328,16 +328,16 @@ and set them without the transparency value.
     "tab.closeIcon.pressed": "{{ transparent }}66", {#- 66 alpha -> 40% opacity #}
 
     {#-
-    Yes, these colours is not techincally correct, as white and black will be inverted based on the theme,
+    Yes, these colours is not technically correct, as white and black will be inverted based on the theme,
     but Fleet doesn't invert them based on `theme.kind`.
     If they ever change this, ansiBlack and ansiWhite should be flipped based on the theme.
     #}
-    "terminal.ansiColors.background.ansiBlack": "Text",
+    "terminal.ansiColors.background.ansiBlack": "Surface0",
     "terminal.ansiColors.foreground.ansiBlack": "Text",
     "terminal.ansiColors.background.ansiBlue": "Blue",
     "terminal.ansiColors.foreground.ansiBlue": "Blue",
-    "terminal.ansiColors.background.ansiBrightBlack": "Base",
-    "terminal.ansiColors.foreground.ansiBrightBlack": "Base",
+    "terminal.ansiColors.background.ansiBrightBlack": "Surface1",
+    "terminal.ansiColors.foreground.ansiBrightBlack": "Surface2",
     "terminal.ansiColors.background.ansiBrightBlue": "Sapphire",
     "terminal.ansiColors.foreground.ansiBrightBlue": "Sapphire",
     "terminal.ansiColors.background.ansiBrightCyan": "Teal",
@@ -349,7 +349,7 @@ and set them without the transparency value.
     "terminal.ansiColors.background.ansiBrightRed": "Maroon",
     "terminal.ansiColors.foreground.ansiBrightRed": "Maroon",
     "terminal.ansiColors.background.ansiBrightWhite": "Base",
-    "terminal.ansiColors.foreground.ansiBrightWhite": "Base",
+    "terminal.ansiColors.foreground.ansiBrightWhite": "Subtext1",
     "terminal.ansiColors.background.ansiBrightYellow": "Yellow",
     "terminal.ansiColors.foreground.ansiBrightYellow": "Yellow",
     "terminal.ansiColors.background.ansiCyan": "Sky",
@@ -360,8 +360,8 @@ and set them without the transparency value.
     "terminal.ansiColors.foreground.ansiMagenta": "Pink",
     "terminal.ansiColors.background.ansiRed": "Red",
     "terminal.ansiColors.foreground.ansiRed": "Red",
-    "terminal.ansiColors.background.ansiWhite": "Base",
-    "terminal.ansiColors.foreground.ansiWhite": "Base",
+    "terminal.ansiColors.background.ansiWhite": "Text",
+    "terminal.ansiColors.foreground.ansiWhite": "Text",
     "terminal.ansiColors.background.ansiYellow": "Yellow",
     "terminal.ansiColors.foreground.ansiYellow": "Yellow",
 
