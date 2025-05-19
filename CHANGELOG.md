@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/catppuccin/fleet/compare/v1.2.0...v1.2.1) (2025-05-19)
+
+
+### Bug Fixes
+
+* adjust terminal colours ([#80](https://github.com/catppuccin/fleet/issues/80)) ([7dbc6a3](https://github.com/catppuccin/fleet/commit/7dbc6a336b596f6d6413b39b42ff3e6a001ee58d))
+
 ## [1.2.0](https://github.com/catppuccin/fleet/compare/v1.1.1...v1.2.0) (2024-12-18)
 
 
