@@ -1,6 +1,6 @@
 [versions]
 kotlin = "2.1.21"
-fleet-sdk = "0.6.247"
+fleet-sdk = "0.7.251"
 fleet-runtime = "1.41.30"
 
 [libraries]
