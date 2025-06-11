@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/catppuccin/fleet/compare/v1.2.1...v1.2.2) (2025-06-11)
+
+
+### Bug Fixes
+
+* Upgrade to latest Fleet and latest SDK releases ([6e14936](https://github.com/catppuccin/fleet/commit/6e1493648f936b3b5bc0e220b8cd4d7e0f4c84d1))
+
 ## [1.2.1](https://github.com/catppuccin/fleet/compare/v1.2.0...v1.2.1) (2025-05-19)
 
 
