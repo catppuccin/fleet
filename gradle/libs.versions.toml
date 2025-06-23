@@ -1,5 +1,5 @@
 [versions]
-kotlin = "2.1.21"
+kotlin = "2.2.0"
 fleet-sdk = "0.7.337"
 fleet-runtime = "1.48.261"
 
