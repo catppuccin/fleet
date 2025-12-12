@@ -34,7 +34,7 @@ jobs:
         run: "./gradlew clean distZip"
 
       - name: Upload Zip
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: "Catppuccin Fleet Theme"
           path: catppuccin-theme/build/pluginDistribution/*.zip
